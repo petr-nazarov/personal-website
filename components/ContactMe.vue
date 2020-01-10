@@ -55,11 +55,8 @@ export default {
 .wrapper {
   background-color: #333;
   color: $white;
-  overflow: hidden;
-  padding-bottom: 64px;
 }
 .title {
-  margin-top: 64px;
   color: $white;
 }
 .form {

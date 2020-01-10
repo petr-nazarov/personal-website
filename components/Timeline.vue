@@ -38,9 +38,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import '~/assets/styles/main';
-.title {
-  margin-top: 64px;
-}
 .line {
   &__container {
     border-left: 2px solid #ccd1d9;

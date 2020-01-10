@@ -2,16 +2,20 @@
   <div>
     <about-me :socials="socials" />
     <services />
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <timeline :elements="education" title="Education" />
-        </div>
-        <div class="column">
-          <timeline :elements="employment" title="Employment" />
+    <!-- Timelines -->
+    <div class="wrapper">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <timeline :elements="education" title="Education" />
+          </div>
+          <div class="column">
+            <timeline :elements="employment" title="Employment" />
+          </div>
         </div>
       </div>
     </div>
+    <hire-me />
     <skills :skills="skills" />
     <contact-me />
     <v-footer :contacts="contacts" :socials="socials" />
@@ -25,6 +29,7 @@ import Timeline from '~/components/Timeline.vue'
 import Skills from '~/components/Skills.vue'
 import ContactMe from '~/components/ContactMe.vue'
 import VFooter from '~/components/Footer.vue'
+import HireMe from '~/components/HireMe.vue'
 export default {
   components: {
     AboutMe,
@@ -32,6 +37,7 @@ export default {
     Timeline,
     Skills,
     ContactMe,
+    HireMe,
     VFooter
   },
   data() {

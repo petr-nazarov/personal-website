@@ -12,6 +12,10 @@ select:focus {
   outline: none;
 }
 
+.wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
 .UI-button{
   background: none;
   border: 1px solid $white;

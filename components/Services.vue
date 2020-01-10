@@ -60,8 +60,6 @@ export default {
 @import '~/assets/styles/main';
 .wrapper {
   background-color: $grey;
-  padding-top: 64px;
-  padding-bottom: 64px;
 }
 .services__container {
   margin-top: 32px;

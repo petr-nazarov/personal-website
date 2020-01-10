@@ -38,12 +38,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import '~/assets/styles/main';
-.wrapper {
-  padding-bottom: 64px;
-}
-.title {
-  margin-top: 64px;
-}
+
 .group-title {
   font-weight: 700;
   margin-bottom: 8px;
