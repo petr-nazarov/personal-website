@@ -2,16 +2,28 @@
   <div>
     <about-me :socials="socials" />
     <services />
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <timeline :elements="education" title="Education" />
+        </div>
+        <div class="column">
+          <timeline :elements="employment" title="Employment" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import AboutMe from '~/components/AboutMe.vue'
 import Services from '~/components/Services.vue'
+import Timeline from '~/components/Timeline.vue'
 export default {
   components: {
     AboutMe,
-    Services
+    Services,
+    Timeline
   },
   data() {
     return {
@@ -39,6 +51,45 @@ export default {
         {
           link: 'https://github.com/',
           icon: 'fa-whatsapp'
+        }
+      ],
+      education: [
+        {
+          date: '2019 - now',
+          title: 'Ulpan, Tel-Aviv, Israel',
+          subtitle: 'I am learning Hebrew at Ulpan'
+        },
+        {
+          date: '2018 - now',
+          title: 'Far Eastern Federal University',
+          subtitle: 'Master of Applied Mathematics and Computer Science'
+        },
+        {
+          date: '2014 - 2018',
+          title: 'Far Eastern Federal University',
+          subtitle: 'Bachelor of Mathematics and Computer Sciences'
+        },
+        {
+          date: '2012 - 2014',
+          title: `Far Eastern Federal University - College of Humanities and Economics`,
+          subtitle: 'Information Technologies class'
+        }
+      ],
+      employment: [
+        {
+          date: '2016 - now',
+          title: 'Founded FrrCode.com agency',
+          subtitle: `We develop Web and mobile applications for digital agencies. My main responsibility is to work with clients, manage the development of products`
+        },
+        {
+          date: '2014 - 2016',
+          title: 'LTD DVIGA',
+          subtitle: `I was a lead developer at this company, and focused mostly on E-Comerce sites`
+        },
+        {
+          date: '2012 - 2014',
+          title: 'Freelance',
+          subtitle: 'Developed of personal web-sites and E-Comerce sites'
         }
       ]
     }
