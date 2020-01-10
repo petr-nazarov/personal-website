@@ -21,6 +21,12 @@ export default {
         href:
           'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap'
       }
+    ],
+    script: [
+      {
+        src: 'https://kit.fontawesome.com/12626e629e.js',
+        crossorigin: 'anonymous'
+      }
     ]
   },
   /*
