@@ -1,15 +1,14 @@
 <template>
   <div class="container">
-    <logo />
+    <about-me />
   </div>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
-
+<script lang="ts">
+import AboutMe from '~/components/AboutMe.vue'
 export default {
   components: {
-    Logo
+    AboutMe
   }
 }
 </script>

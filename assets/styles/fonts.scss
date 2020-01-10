@@ -1,0 +1,17 @@
+.has-text-secondary{
+  color: $secondary !important;
+}
+
+.title{
+  color: $primary;
+  text-transform: uppercase;
+  &.is-2{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 16;
+    margin-bottom: 8;
+  }
+}
+.subtitle{
+  color: $secondary;
+}
