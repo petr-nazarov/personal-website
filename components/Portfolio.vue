@@ -67,7 +67,6 @@ export default {
           about: 'asdadsd',
           preview: require('@/assets/images/portfolio/mikhail/preview.png'),
           full: [
-            require('@/assets/images/portfolio/mikhail/preview.png'),
             require('@/assets/images/portfolio/mikhail/full-1.png'),
             require('@/assets/images/portfolio/mikhail/full-2.png')
           ],
