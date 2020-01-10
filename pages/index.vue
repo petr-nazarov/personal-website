@@ -1,14 +1,17 @@
 <template>
-  <div class="container">
+  <div>
     <about-me :socials="socials" />
+    <services />
   </div>
 </template>
 
 <script lang="ts">
 import AboutMe from '~/components/AboutMe.vue'
+import Services from '~/components/Services.vue'
 export default {
   components: {
-    AboutMe
+    AboutMe,
+    Services
   },
   data() {
     return {

@@ -1,26 +1,28 @@
 <template>
-  <div class="columns">
-    <div class="column is-6 has-text-centered">
-      <img src="https://via.placeholder.com/350" alt="My photo" />
-    </div>
-    <div class="column is-6">
-      <h4 class="greeting has-text-centered">{{ greeting }}</h4>
-      <h2 class="title is-2 has-text-centered has-text-secondary">
-        {{ title }}
-      </h2>
-      <p class="has-text-left">
-        {{ text }}
-      </p>
-      <div class="social-icons">
-        <a
-          v-for="(social, index) in socials"
-          :key="index"
-          class="social-icons__element"
-          :href="social.link"
-          target="_blank"
-        >
-          <i :class="social.icon" class="social-icons__icon fab"></i>
-        </a>
+  <div class="container">
+    <div class="columns">
+      <div class="column is-6 has-text-centered">
+        <img src="https://via.placeholder.com/350" alt="My photo" />
+      </div>
+      <div class="column is-6">
+        <h4 class="greeting has-text-centered">{{ greeting }}</h4>
+        <h2 class="title is-2 has-text-centered has-text-secondary">
+          {{ title }}
+        </h2>
+        <p class="has-text-left">
+          {{ text }}
+        </p>
+        <div class="social-icons">
+          <a
+            v-for="(social, index) in socials"
+            :key="index"
+            class="social-icons__element"
+            :href="social.link"
+            target="_blank"
+          >
+            <i :class="social.icon" class="social-icons__icon fab"></i>
+          </a>
+        </div>
       </div>
     </div>
   </div>

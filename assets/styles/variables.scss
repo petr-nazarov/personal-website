@@ -1,6 +1,8 @@
 @import "~bulma/sass/utilities/_all";
 $primary : #292b2c;
 $secondary : #666;
+$grey: #f4f4f4;
+$white: #ffffff;
 $primary-invert: findColorInvert($primary);
 $colors: (
     "white": ($white, $black),
