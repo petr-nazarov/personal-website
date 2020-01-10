@@ -17,6 +17,7 @@
     </div>
     <hire-me />
     <skills :skills="skills" />
+    <portfolio />
     <contact-me />
     <v-footer :contacts="contacts" :socials="socials" />
   </div>
@@ -30,6 +31,7 @@ import Skills from '~/components/Skills.vue'
 import ContactMe from '~/components/ContactMe.vue'
 import VFooter from '~/components/Footer.vue'
 import HireMe from '~/components/HireMe.vue'
+import Portfolio from '~/components/Portfolio.vue'
 export default {
   components: {
     AboutMe,
@@ -38,6 +40,7 @@ export default {
     Skills,
     ContactMe,
     HireMe,
+    Portfolio,
     VFooter
   },
   data() {
