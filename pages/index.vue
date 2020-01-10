@@ -13,6 +13,7 @@
       </div>
     </div>
     <skills :skills="skills" />
+    <contact-me />
   </div>
 </template>
 
@@ -21,12 +22,14 @@ import AboutMe from '~/components/AboutMe.vue'
 import Services from '~/components/Services.vue'
 import Timeline from '~/components/Timeline.vue'
 import Skills from '~/components/Skills.vue'
+import ContactMe from '~/components/ContactMe.vue'
 export default {
   components: {
     AboutMe,
     Services,
     Timeline,
-    Skills
+    Skills,
+    ContactMe
   },
   data() {
     return {

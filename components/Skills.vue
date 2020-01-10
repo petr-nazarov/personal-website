@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container wrapper">
     <h2 class="title is-2 has-text-centered">Skills</h2>
     <div class="columns">
       <div v-for="(group, index) in skills" :key="index" class="column">
@@ -38,6 +38,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import '~/assets/styles/main';
+.wrapper {
+  padding-bottom: 64px;
+}
 .title {
   margin-top: 64px;
 }

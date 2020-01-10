@@ -5,3 +5,23 @@ body{
   font-weight: 400;
   font-size: 16px;
 }
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.UI-button{
+  background: none;
+  border: 1px solid $white;
+  color: $white;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 0;
+  text-transform: capitalize;
+  &:hover {
+    color: $primary;
+    background-color: $white;
+  }
+}
