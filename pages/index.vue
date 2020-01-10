@@ -12,6 +12,7 @@
         </div>
       </div>
     </div>
+    <skills :skills="skills" />
   </div>
 </template>
 
@@ -19,11 +20,13 @@
 import AboutMe from '~/components/AboutMe.vue'
 import Services from '~/components/Services.vue'
 import Timeline from '~/components/Timeline.vue'
+import Skills from '~/components/Skills.vue'
 export default {
   components: {
     AboutMe,
     Services,
-    Timeline
+    Timeline,
+    Skills
   },
   data() {
     return {
@@ -90,6 +93,57 @@ export default {
           date: '2012 - 2014',
           title: 'Freelance',
           subtitle: 'Developed of personal web-sites and E-Comerce sites'
+        }
+      ],
+      skills: [
+        {
+          title: 'Languages',
+          skills: [
+            'English (Advanced)',
+            'Russian (Native)',
+            'Hebrew (Beginner)'
+          ]
+        },
+        {
+          title: 'Front end',
+          skills: [
+            'HTML',
+            'CSS (SASS, SCSS)',
+            'JavaScript',
+            'Vue.js',
+            'Nuxt.js',
+            'Vuex',
+            'React.js',
+            'Redux',
+            'jQuery',
+            'Bulma',
+            'Buefy',
+            'Bootstrap'
+          ]
+        },
+        {
+          title: 'Back end',
+          skills: [
+            'Node.js',
+            'Koa.js',
+            'Express.js',
+            'Strapi.js',
+            'PHP',
+            'Laravel',
+            '1C-Bitrix'
+          ]
+        },
+        {
+          title: 'Mobile',
+          skills: ['React Native', 'Native Script']
+        },
+        {
+          title: 'Databases',
+          skills: ['MongoDB', 'MySQL', 'SQLite', 'PostgreSQL']
+        },
+        {
+          title: 'Other',
+          skills: ['Typescript', 'PWA', 'Docker', 'Git', 'Java']
         }
       ]
     }
