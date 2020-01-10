@@ -3,6 +3,7 @@ $primary : #292b2c;
 $secondary : #666;
 $grey: #f4f4f4;
 $white: #ffffff;
+$black: #111;
 $primary-invert: findColorInvert($primary);
 $colors: (
     "white": ($white, $black),

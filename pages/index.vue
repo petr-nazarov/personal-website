@@ -14,6 +14,7 @@
     </div>
     <skills :skills="skills" />
     <contact-me />
+    <v-footer :contacts="contacts" :socials="socials" />
   </div>
 </template>
 
@@ -23,13 +24,15 @@ import Services from '~/components/Services.vue'
 import Timeline from '~/components/Timeline.vue'
 import Skills from '~/components/Skills.vue'
 import ContactMe from '~/components/ContactMe.vue'
+import VFooter from '~/components/Footer.vue'
 export default {
   components: {
     AboutMe,
     Services,
     Timeline,
     Skills,
-    ContactMe
+    ContactMe,
+    VFooter
   },
   data() {
     return {
@@ -148,7 +151,15 @@ export default {
           title: 'Other',
           skills: ['Typescript', 'PWA', 'Docker', 'Git', 'Java']
         }
-      ]
+      ],
+      contacts: {
+        email: {
+          value: 'mrzueck@gmail.com'
+        },
+        tel: {
+          value: '+7 914 066 - 0444'
+        }
+      }
     }
   }
 }
