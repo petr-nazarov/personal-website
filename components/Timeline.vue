@@ -1,7 +1,9 @@
 <template>
   <div class="">
-    <h2 class="title is-2 has-text-centered">{{ title }}</h2>
-    <div class="line__container">
+    <h2 class="title is-2 has-text-centered" data-aos="fade-right">
+      {{ title }}
+    </h2>
+    <div class="line__container" data-aos="fade-up">
       <div
         v-for="(element, index) in elements"
         :key="index"

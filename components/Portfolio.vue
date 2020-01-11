@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="container">
-      <h2 class="title is-2 has-text-centered">
+      <h2 class="title is-2 has-text-centered" data-aos="fade-right">
         Portfolio
       </h2>
       <div class="columns is-multiline potfolio__container">
@@ -10,7 +10,11 @@
           :key="index"
           class="column is-4"
         >
-          <div class="portfolio__element" @click="openModal(index)">
+          <div
+            @click="openModal(index)"
+            class="portfolio__element"
+            data-aos="zoom-in"
+          >
             <div class="portfolio__magnifire has-text-centered">
               <i class="fas fa-search-plus fa-3x"></i>
             </div>

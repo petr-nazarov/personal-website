@@ -1,12 +1,14 @@
 <template>
   <div class="wrapper">
     <div class="container">
-      <h2 class="title is-2 has-text-centered">CONTACT ME</h2>
-      <p class="has-text-centered">
+      <h2 class="title is-2 has-text-centered" data-aos="fade-right">
+        CONTACT ME
+      </h2>
+      <p class="has-text-centered" data-aos="fade-right">
         Please fill the form below. I will contact you as soon as possible.
       </p>
       <form>
-        <div class="columns form">
+        <div class="columns form" data-aos="fade-right">
           <div class="column">
             <input
               class="input form-input"
@@ -32,7 +34,7 @@
             ></textarea>
           </div>
         </div>
-        <div class="has-text-centered">
+        <div class="has-text-centered" data-aos="fade-left">
           <input type="submit" text="Send message" class="button UI-button" />
         </div>
       </form>

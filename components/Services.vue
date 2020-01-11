@@ -1,12 +1,12 @@
 <template>
   <div class="wrapper">
     <div class="container">
-      <h2 class="title is-2 has-text-centered">
+      <h2 class="title is-2 has-text-centered" data-aos="fade-right">
         What can i offer
       </h2>
       <div class="columns">
         <div v-for="(service, index) in services" :key="index" class="column">
-          <div class="service">
+          <div class="service" data-aos="flip-left">
             <div class="service__icon has-text-centered">
               <i :class="service.icon" class="fas"></i>
             </div>
