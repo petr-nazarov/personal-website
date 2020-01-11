@@ -214,9 +214,6 @@ export default {
   display: none;
 }
 .portfolio {
-  &__container {
-    //
-  }
   &__magnifire {
     display: none;
     position: absolute;

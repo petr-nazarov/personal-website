@@ -8,8 +8,8 @@
             <p class="group-title" data-aos="fade-right">{{ group.title }}:</p>
             <div class="skills tags">
               <span
-                v-for="(skill, index) in group.skills"
-                :key="index"
+                v-for="(skill, i) in group.skills"
+                :key="i"
                 class="skill tag is-white"
                 data-aos="zoom-in"
               >

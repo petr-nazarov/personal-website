@@ -77,9 +77,6 @@ export default {
   &__icon {
     font-size: 3rem;
   }
-  &__title {
-    //
-  }
   &__description {
     height: 100px;
   }
