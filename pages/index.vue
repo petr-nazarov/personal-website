@@ -1,29 +1,35 @@
 <template>
   <div>
-    <about-me :socials="socials" />
-    <services />
+    <v-header :contacts="contacts" />
+    <about-me id="aboutme" :socials="socials" />
+    <services id="services" />
     <!-- Timelines -->
     <div class="wrapper">
       <div class="container">
         <div class="columns">
           <div class="column">
-            <timeline :elements="education" title="Education" />
+            <timeline id="education" :elements="education" title="Education" />
           </div>
           <div class="column">
-            <timeline :elements="employment" title="Employment" />
+            <timeline
+              id="employment"
+              :elements="employment"
+              title="Employment"
+            />
           </div>
         </div>
       </div>
     </div>
     <hire-me />
-    <skills :skills="skills" />
-    <portfolio />
-    <contact-me />
+    <skills id="skills" :skills="skills" />
+    <portfolio id="portfolio" />
+    <contact-me id="contactme" />
     <v-footer :contacts="contacts" :socials="socials" />
   </div>
 </template>
 
 <script lang="ts">
+import VHeader from '~/components/Header.vue'
 import AboutMe from '~/components/AboutMe.vue'
 import Services from '~/components/Services.vue'
 import Timeline from '~/components/Timeline.vue'
@@ -34,6 +40,7 @@ import HireMe from '~/components/HireMe.vue'
 import Portfolio from '~/components/Portfolio.vue'
 export default {
   components: {
+    VHeader,
     AboutMe,
     Services,
     Timeline,
@@ -49,6 +56,10 @@ export default {
         {
           link: 'https://www.facebook.com/petrnazarov',
           icon: 'fa-facebook-f'
+        },
+        {
+          link: 'https://www.instagram.com/nazarov.petr_97/',
+          icon: 'fa-instagram'
         },
         {
           link: 'https://www.linkedin.com/in/nazarov-petr/',

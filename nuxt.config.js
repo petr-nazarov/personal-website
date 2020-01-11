@@ -40,7 +40,11 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~plugins/buefy.ts', { src: '~plugins/AOS.ts', mode: 'client' }],
+  plugins: [
+    '~plugins/buefy.ts',
+    { src: '~plugins/smooth-scroll.ts', mode: 'client' },
+    { src: '~plugins/AOS.ts', mode: 'client' }
+  ],
   /*
    ** Nuxt.js dev-modules
    */

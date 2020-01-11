@@ -5,15 +5,21 @@
         <div class="column is-8">
           <span class="contact">
             <i class="fa fa-phone"> </i>
-            <a :href="`tel:${contacts.tel.value}`" class="contacts-link">{{
-              contacts.tel.value
-            }}</a>
+            <a
+              :href="`tel:${contacts.tel.value}`"
+              target="_blank"
+              class="contacts-link"
+              >{{ contacts.tel.value }}</a
+            >
           </span>
           <span class="contact contact_last">
             <i class="fa fa-envelope"> </i>
-            <a :href="`mailto:${contacts.email.value}`" class="contacts-link">{{
-              contacts.email.value
-            }}</a>
+            <a
+              :href="`mailto:${contacts.email.value}`"
+              target="_blank"
+              class="contacts-link"
+              >{{ contacts.email.value }}</a
+            >
           </span>
         </div>
         <div class="column is-4">
