@@ -2,14 +2,14 @@
   <div class="out-wrapper">
     <div class="wrapper">
       <div class="container ">
-        <h2 class="title is-2 has-text-centered">
+        <h2 class="title is-2 has-text-centered" data-aos="fade-right">
           Do you have an interesting project?
         </h2>
-        <p class=" hire-me__text  has-text-centered">
+        <p class=" hire-me__text  has-text-centered" data-aos="fade-right">
           I love chalanging projects that allow me to expand my area of
           expertise. Contact me and we can arrange a meating!
         </p>
-        <div class="has-text-centered">
+        <div class="has-text-centered" data-aos="fade-left">
           <a href="#" class="button UI-button hire-me__btn">HireMe</a>
         </div>
       </div>
