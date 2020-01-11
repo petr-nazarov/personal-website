@@ -4,17 +4,19 @@
       <h2 class="title is-2 has-text-centered">
         What can i offer
       </h2>
-      <div class="services__container">
-        <div v-for="(service, index) in services" :key="index" class="service">
-          <div class="service__icon has-text-centered">
-            <i class="fas" :class="service.icon"></i>
+      <div class="columns">
+        <div v-for="(service, index) in services" :key="index" class="column">
+          <div class="service">
+            <div class="service__icon has-text-centered">
+              <i :class="service.icon" class="fas"></i>
+            </div>
+            <h3 class="title is-3 has-text-centered service__title">
+              {{ service.name }}
+            </h3>
+            <p class="service__description has-text-centered ">
+              {{ service.description }}
+            </p>
           </div>
-          <h3 class="title is-3 has-text-centered service__title">
-            {{ service.name }}
-          </h3>
-          <p class="service__description has-text-centered ">
-            {{ service.description }}
-          </p>
         </div>
       </div>
     </div>
@@ -68,7 +70,7 @@ export default {
   justify-content: space-evenly;
 }
 .service {
-  width: 20%;
+  // width: 20%;
   background-color: $white;
   padding: 10px;
   border-bottom: 5px solid $primary;
@@ -79,7 +81,7 @@ export default {
     //
   }
   &__description {
-    //
+    height: 100px;
   }
 }
 </style>

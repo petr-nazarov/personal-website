@@ -6,23 +6,28 @@
           <img src="https://via.placeholder.com/350" alt="My photo" />
         </div>
         <div class="column is-6">
-          <h4 class="greeting has-text-centered">{{ greeting }}</h4>
-          <h2 class="title is-2 has-text-centered has-text-secondary">
-            {{ title }}
-          </h2>
-          <p class="has-text-left">
-            {{ text }}
-          </p>
-          <div class="social-icons">
-            <a
-              v-for="(social, index) in socials"
-              :key="index"
-              class="social-icons__element"
-              :href="social.link"
-              target="_blank"
-            >
-              <i :class="social.icon" class="social-icons__icon fab"></i>
-            </a>
+          <div class="right-container">
+            <div class="right-top-container">
+              <h4 class="greeting has-text-centered">{{ greeting }}</h4>
+              <h2 class="title is-2 has-text-centered has-text-secondary">
+                {{ title }}
+              </h2>
+              <p class="about-me-text has-text-left">
+                {{ text }}
+              </p>
+            </div>
+
+            <div class="social-icons">
+              <a
+                v-for="(social, index) in socials"
+                :key="index"
+                :href="social.link"
+                class="social-icons__element"
+                target="_blank"
+              >
+                <i :class="social.icon" class="social-icons__icon fab"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -56,8 +61,16 @@ export default {
   padding-top: 32px;
   margin-bottom: 8px;
 }
+.right-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-me-text {
+  margin-bottom: 32px;
+}
 .social-icons {
-  margin-top: 16px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

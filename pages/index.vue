@@ -47,27 +47,27 @@ export default {
     return {
       socials: [
         {
-          link: 'https://github.com/',
+          link: 'https://www.facebook.com/petrnazarov',
           icon: 'fa-facebook-f'
         },
         {
-          link: 'https://github.com/',
+          link: 'https://www.linkedin.com/in/nazarov-petr/',
           icon: 'fa-linkedin-in'
         },
         {
-          link: 'https://github.com/',
+          link: 'https://github.com/nazarov-petr',
           icon: 'fa-github'
         },
         {
-          link: 'https://github.com/',
+          link: 'https://medium.com/@mrzueck',
           icon: 'fa-medium-m'
         },
         {
-          link: 'https://github.com/',
+          link: 'https://t.me/zueck',
           icon: 'fa-telegram-plane'
         },
         {
-          link: 'https://github.com/',
+          link: 'https://wa.me/79140660444',
           icon: 'fa-whatsapp'
         }
       ],

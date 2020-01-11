@@ -2,27 +2,27 @@
   <footer class="footer">
     <div class="container">
       <div class="columns">
-        <div class="column">
+        <div class="column is-8">
           <span class="contact">
             <i class="fa fa-phone"> </i>
             <a :href="`tel:${contacts.tel.value}`" class="contacts-link">{{
               contacts.tel.value
             }}</a>
           </span>
-          <span class="contact">
+          <span class="contact contact_last">
             <i class="fa fa-envelope"> </i>
             <a :href="`mailto:${contacts.email.value}`" class="contacts-link">{{
               contacts.email.value
             }}</a>
           </span>
         </div>
-        <div class="column">
-          <div class="social-icons">
+        <div class="column is-4">
+          <div class="columns is-mobile">
             <a
               v-for="(social, index) in socials"
               :key="index"
               :href="social.link"
-              class="social-icons__element"
+              class="column social-icons__element"
               target="_blank"
             >
               <i :class="social.icon" class="social-icons__icon fab"></i>
@@ -64,6 +64,9 @@ export default {
 }
 .contact {
   margin-right: 16px;
+  &_last {
+    margin-right: 0;
+  }
 }
 .contacts-link {
   color: $white;
@@ -73,9 +76,6 @@ export default {
   }
 }
 .social-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   &__element {
     margin-right: 16px;
     display: block;
