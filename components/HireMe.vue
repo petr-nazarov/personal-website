@@ -32,7 +32,7 @@ export default {
 @import '~/assets/styles/main';
 
 .wrapper {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   color: $white;
 }
 .out-wrapper {

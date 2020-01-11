@@ -48,4 +48,11 @@ export default {
   font-weight: 700;
   margin-bottom: 8px;
 }
+.skill {
+  cursor: default;
+  &:hover {
+    background: $primary !important;
+    color: $white !important;
+  }
+}
 </style>

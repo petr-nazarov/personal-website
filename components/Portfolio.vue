@@ -151,7 +151,7 @@ export default {
                   -- Vue.js (Nuxt.js)
                   -- Dockker
                   -- bash installer`,
-          preview: require('@/assets/images/portfolio/finance/full-1.jpg'),
+          preview: require('@/assets/images/portfolio/finance/preview.jpg'),
           full: [
             require('@/assets/images/portfolio/finance/full-1.jpg'),
             require('@/assets/images/portfolio/finance/full-2.jpg')
@@ -224,6 +224,17 @@ export default {
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.8);
+  }
+  &__overlay {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
   }
   &__element {
     height: 100%;

@@ -86,7 +86,7 @@ export default {
         {
           date: '2019 - now',
           title: 'Ulpan, Tel-Aviv, Israel',
-          subtitle: 'I am learning Hebrew at Ulpan'
+          subtitle: 'Learning Hebrew at Ulpan'
         },
         {
           date: '2018 - now',
@@ -153,7 +153,7 @@ export default {
             'Node.js',
             'Koa.js',
             'Express.js',
-            'Strapi.js',
+            'Strapi.io',
             'PHP',
             'Laravel',
             '1C-Bitrix'
@@ -161,7 +161,7 @@ export default {
         },
         {
           title: 'Mobile',
-          skills: ['React Native', 'Native Script']
+          skills: ['React Native', 'React Native Redux', 'Native Script']
         },
         {
           title: 'Databases',
@@ -169,7 +169,19 @@ export default {
         },
         {
           title: 'Other',
-          skills: ['Typescript', 'PWA', 'Docker', 'Git', 'Java']
+          skills: [
+            'Java',
+            'Typescript',
+            'PWA',
+            'Docker',
+            'Git',
+            'REST API',
+            'Postman',
+            'Photoshop',
+            'Sketch',
+            'Figma',
+            'Avocode'
+          ]
         }
       ],
       contacts: {

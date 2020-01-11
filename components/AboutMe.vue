@@ -8,12 +8,21 @@
         <div class="column is-6">
           <div class="right-container">
             <div class="right-top-container">
-              <h4 class="greeting has-text-centered">{{ greeting }}</h4>
+              <h4 class="greeting has-text-centered">
+                Hi! I'm Petr! Nice to meet you.
+              </h4>
               <h2 class="title is-2 has-text-centered has-text-secondary">
-                {{ title }}
+                About Me
               </h2>
               <p class="about-me-text has-text-left">
-                {{ text }}
+                My name is Petr Nazarov. I am a Full Stack Web and Mobile
+                developer, with over 6 years of experience and more than 20
+                completed projects. I am a founder of outsource web-development
+                company
+                <a href="https://frrcode.com/" target="_blank">FrrCode</a> and a
+                main developer in it. Right now my passion is creating Full
+                stack Node.js projects using Koa.js, Vue.js (Nuxt.js) and
+                MongoDb and creating Mobile applications using React Native.
               </p>
             </div>
 
@@ -47,13 +56,6 @@ export default {
     socials: {
       type: Array,
       required: true
-    }
-  },
-  data() {
-    return {
-      greeting: `Hi! I'm Petr!`,
-      title: 'About Me',
-      text: `I am a full-stack web developer, with over 5 years of experience and more than 20 completed projects. I am a founder of  outsource web-development company and a main developer in it.  Right now my passion is creating Full stack Node.js projects using Koa.js, Vue.js (Nuxt.js) and MongoDb and creating Mobile applications using React Native.`
     }
   }
 }

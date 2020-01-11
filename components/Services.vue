@@ -74,8 +74,17 @@ export default {
   background-color: $white;
   padding: 10px;
   border-bottom: 5px solid $primary;
+  &:hover {
+    background-color: $primary;
+    color: $white;
+    border-bottom: 5px solid $white;
+  }
+  &:hover .title {
+    color: $white;
+  }
   &__icon {
     font-size: 3rem;
+    margin-bottom: 4px;
   }
   &__description {
     height: 100px;
