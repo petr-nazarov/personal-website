@@ -17,16 +17,21 @@
               </p>
             </div>
 
-            <div class="social-icons">
-              <a
-                v-for="(social, index) in socials"
-                :key="index"
-                :href="social.link"
-                class="social-icons__element"
-                target="_blank"
-              >
-                <i :class="social.icon" class="social-icons__icon fab"></i>
-              </a>
+            <div class="columns">
+              <div class="column is-6">
+                <div class="columns is-mobile">
+                  <a
+                    v-for="(social, index) in socials"
+                    :key="index"
+                    :href="social.link"
+                    class="column social-icons__element"
+                    target="_blank"
+                  >
+                    <i :class="social.icon" class="social-icons__icon fab"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="column is-6"></div>
             </div>
           </div>
         </div>
@@ -71,11 +76,7 @@ export default {
   margin-bottom: 32px;
 }
 .social-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   &__element {
-    margin-right: 16px;
     display: block;
     color: $primary;
 

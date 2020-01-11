@@ -77,7 +77,6 @@ export default {
 }
 .social-icons {
   &__element {
-    margin-right: 16px;
     display: block;
     color: $white;
 
