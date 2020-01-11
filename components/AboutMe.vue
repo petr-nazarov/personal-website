@@ -1,27 +1,29 @@
 <template>
-  <div class="container">
-    <div class="columns">
-      <div class="column is-6 has-text-centered">
-        <img src="https://via.placeholder.com/350" alt="My photo" />
-      </div>
-      <div class="column is-6">
-        <h4 class="greeting has-text-centered">{{ greeting }}</h4>
-        <h2 class="title is-2 has-text-centered has-text-secondary">
-          {{ title }}
-        </h2>
-        <p class="has-text-left">
-          {{ text }}
-        </p>
-        <div class="social-icons">
-          <a
-            v-for="(social, index) in socials"
-            :key="index"
-            class="social-icons__element"
-            :href="social.link"
-            target="_blank"
-          >
-            <i :class="social.icon" class="social-icons__icon fab"></i>
-          </a>
+  <div class="wrapper">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-6 has-text-centered">
+          <img src="https://via.placeholder.com/350" alt="My photo" />
+        </div>
+        <div class="column is-6">
+          <h4 class="greeting has-text-centered">{{ greeting }}</h4>
+          <h2 class="title is-2 has-text-centered has-text-secondary">
+            {{ title }}
+          </h2>
+          <p class="has-text-left">
+            {{ text }}
+          </p>
+          <div class="social-icons">
+            <a
+              v-for="(social, index) in socials"
+              :key="index"
+              class="social-icons__element"
+              :href="social.link"
+              target="_blank"
+            >
+              <i :class="social.icon" class="social-icons__icon fab"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -41,7 +43,7 @@ export default {
     return {
       greeting: `Hi! I'm Petr!`,
       title: 'About Me',
-      text: `I am a full-stack web developer, with 5 years of experience and more than 20 completed projects. I have a degree in Mathematics and Computer Sciences. I am a founder of outsource web-development team. Right now my passion is creating Full-stack Node.js projects using Koa.js,Nuxt and MongoDb.`
+      text: `I am a full-stack web developer, with over 5 years of experience and more than 20 completed projects. I am a founder of  outsource web-development company and a main developer in it.  Right now my passion is creating Full stack Node.js projects using Koa.js, Vue.js (Nuxt.js) and MongoDb and creating Mobile applications using React Native.`
     }
   }
 }
