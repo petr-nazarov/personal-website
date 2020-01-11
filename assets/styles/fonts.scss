@@ -5,6 +5,11 @@
 .title{
   color: $primary;
   text-transform: uppercase;
+  &.is-1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 16px;
+  }
   &.is-2{
     font-size: 2rem;
     font-weight: 700;

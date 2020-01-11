@@ -1,6 +1,11 @@
 <template>
   <header>
     <b-navbar :fixed-top="true">
+      <template slot="brand">
+        <b-navbar-item :to="{ path: '/' }" tag="router-link">
+          <h1 class="title is-1">Nazarov Petr</h1>
+        </b-navbar-item>
+      </template>
       <template slot="start">
         <b-navbar-item v-scroll-to="'#aboutme'" tag="router-link" to="#">
           About Me

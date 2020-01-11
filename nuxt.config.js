@@ -1,21 +1,31 @@
+const title = 'Nazarov Petr | Full stack Node.js Developer'
+const description =
+  'A personal page of Nazarov Petr - Full stack Node.js Web and Mobile Developer'
 export default {
   mode: 'universal',
   /*
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: description
+      },
+      { name: 'og:title', content: title },
+      {
+        name: 'og:description',
+        content: description
+      },
+      { name: 'og:type', content: 'website' }
+      // TODO { name: 'og:image', content: 'https://nuxtjs.org/meta_640.png' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       {
         rel: 'stylesheet',
         href:
