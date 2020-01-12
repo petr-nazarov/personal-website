@@ -13,7 +13,8 @@ export default {
 @import '~/assets/styles/main';
 .loader {
   &__wrapper {
-    position: absolute;
+    position: fixed;
+    overflow: hidden;
     left: 0;
     right: 0;
     top: 0;

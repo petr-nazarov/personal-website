@@ -15,7 +15,10 @@
         </div>
         <div class="column">
           <h6 class="title">{{ element.title }}</h6>
-          <div class="modal__block">
+          <div
+            v-if="element.about && element.about.length > 0"
+            class="modal__block"
+          >
             <p><b>About this project:</b></p>
             {{ element.about }}
           </div>
@@ -90,9 +93,13 @@ export default {
   }
   &__image {
     width: 100%;
-    height: 100%;
-    max-height: 800px;
+    height: 600px;
+    margin-bottom: 16px;
     object-fit: contain;
+
+    @media (max-width: $mobile) {
+      height: 400px;
+    }
   }
   &__block {
     margin-bottom: 8px;

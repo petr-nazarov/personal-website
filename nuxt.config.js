@@ -1,3 +1,4 @@
+require('dotenv').config()
 const title = 'Nazarov Petr | Full stack Node.js Developer'
 const description =
   'A personal page of Nazarov Petr - Full stack Node.js Web and Mobile Developer'
@@ -32,6 +33,10 @@ export default {
           'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic'
       }
     ]
+  },
+  server: {
+    port: process.env.PORT, // default: 3000
+    host: process.env.HOST // default: localhost,
   },
   /*
    ** Customize the progress-bar color

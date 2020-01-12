@@ -70,7 +70,6 @@ export default {
   justify-content: space-evenly;
 }
 .service {
-  // width: 20%;
   background-color: $white;
   padding: 10px;
   border-bottom: 5px solid $primary;
