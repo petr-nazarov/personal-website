@@ -3,7 +3,11 @@
     <div class="container">
       <div class="columns">
         <div class="column is-6 has-text-centered">
-          <img src="https://via.placeholder.com/350" alt="My photo" />
+          <img
+            class="profile-image"
+            :src="require('@/assets/images/profile/1.jpg')"
+            alt="Petr Nazarov"
+          />
         </div>
         <div class="column is-6">
           <div class="right-container">
@@ -36,7 +40,10 @@
                     class="column social-icons__element"
                     target="_blank"
                   >
-                    <i :class="social.icon" class="social-icons__icon fab"></i>
+                    <font-awesome-icon
+                      :icon="['fab', social.icon]"
+                      class="social-icons__icon fab"
+                    />
                   </a>
                 </div>
               </div>
@@ -62,6 +69,16 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import '~/assets/styles/main';
+.profile-image {
+  max-height: 410px; //mobile 310
+  max-width: 380px;
+  width: 85%;
+  object-fit: cover;
+  object-position: 50% 28%;
+  @media (max-width: $mobile) {
+    max-height: 310px;
+  }
+}
 .greeting {
   font-size: 1.5rem;
   color: $primary;

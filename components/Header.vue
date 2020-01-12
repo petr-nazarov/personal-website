@@ -32,7 +32,7 @@
       <template slot="end">
         <b-navbar-item tag="a">
           <span class="contact">
-            <i class="fa fa-phone"> </i>
+            <font-awesome-icon :icon="['fa', 'phone']" />
             <a
               :href="`tel:${contacts.tel.value}`"
               target="_blank"
@@ -43,7 +43,7 @@
         </b-navbar-item>
         <b-navbar-item tag="a">
           <span class="contact contact_last">
-            <i class="fa fa-envelope"> </i>
+            <font-awesome-icon :icon="['fa', 'envelope']" />
             <a
               :href="`mailto:${contacts.email.value}`"
               target="_blank"

@@ -4,7 +4,7 @@
       <div class="columns">
         <div class="column is-8">
           <span class="contact">
-            <i class="fa fa-phone"> </i>
+            <font-awesome-icon :icon="['fa', 'phone']" />
             <a
               :href="`tel:${contacts.tel.value}`"
               target="_blank"
@@ -13,7 +13,7 @@
             >
           </span>
           <span class="contact contact_last">
-            <i class="fa fa-envelope"> </i>
+            <font-awesome-icon :icon="['fa', 'envelope']" />
             <a
               :href="`mailto:${contacts.email.value}`"
               target="_blank"
@@ -31,7 +31,10 @@
               class="column social-icons__element"
               target="_blank"
             >
-              <i :class="social.icon" class="social-icons__icon fab"></i>
+              <font-awesome-icon
+                :icon="['fab', social.icon]"
+                class="social-icons__icon"
+              />
             </a>
           </div>
         </div>

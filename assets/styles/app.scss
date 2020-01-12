@@ -27,7 +27,7 @@ select:focus {
   font-size: 1rem;
   padding: 8px 16px;
   border-radius: 0;
-  text-transform: capitalize;
+  text-transform: uppercase;
   &:hover {
     color: $primary;
     background-color: $white;

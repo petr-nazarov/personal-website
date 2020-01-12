@@ -1,34 +1,42 @@
 <template>
   <div>
-    <v-header :contacts="contacts" />
-    <about-me id="aboutme" :socials="socials" />
-    <services id="services" />
-    <!-- Timelines -->
-    <div class="wrapper">
-      <div class="container">
-        <div class="columns">
-          <div class="column">
-            <timeline id="education" :elements="education" title="Education" />
-          </div>
-          <div class="column">
-            <timeline
-              id="employment"
-              :elements="employment"
-              title="Employment"
-            />
+    <template>
+      <v-header :contacts="contacts" />
+      <about-me id="aboutme" :socials="socials" />
+      <services id="services" />
+      <!-- Timelines -->
+      <div class="wrapper">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <timeline
+                id="education"
+                :elements="education"
+                title="Education"
+              />
+            </div>
+            <div class="column">
+              <timeline
+                id="employment"
+                :elements="employment"
+                title="Employment"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <hire-me />
-    <skills id="skills" :skills="skills" />
-    <portfolio id="portfolio" />
-    <contact-me id="contactme" />
-    <v-footer :contacts="contacts" :socials="socials" />
+      <hire-me />
+      <skills id="skills" :skills="skills" />
+      <portfolio id="portfolio" />
+      <contact-me id="contactme" />
+      <v-footer :contacts="contacts" :socials="socials" />
+    </template>
+    <loader v-if="isLoading" />
   </div>
 </template>
 
 <script lang="ts">
+import Loader from '~/components/Loader.vue'
 import VHeader from '~/components/Header.vue'
 import AboutMe from '~/components/AboutMe.vue'
 import Services from '~/components/Services.vue'
@@ -40,6 +48,7 @@ import HireMe from '~/components/HireMe.vue'
 import Portfolio from '~/components/Portfolio.vue'
 export default {
   components: {
+    Loader,
     VHeader,
     AboutMe,
     Services,
@@ -52,34 +61,35 @@ export default {
   },
   data() {
     return {
+      isLoading: true,
       socials: [
         {
           link: 'https://www.facebook.com/petrnazarov',
-          icon: 'fa-facebook-f'
+          icon: 'facebook-f'
         },
         {
           link: 'https://www.instagram.com/nazarov.petr_97/',
-          icon: 'fa-instagram'
+          icon: 'instagram'
         },
         {
           link: 'https://www.linkedin.com/in/nazarov-petr/',
-          icon: 'fa-linkedin-in'
+          icon: 'linkedin-in'
         },
         {
           link: 'https://github.com/nazarov-petr',
-          icon: 'fa-github'
+          icon: 'github'
         },
         {
           link: 'https://medium.com/@mrzueck',
-          icon: 'fa-medium-m'
+          icon: 'medium-m'
         },
         {
           link: 'https://t.me/zueck',
-          icon: 'fa-telegram-plane'
+          icon: 'telegram-plane'
         },
         {
           link: 'https://wa.me/79140660444',
-          icon: 'fa-whatsapp'
+          icon: 'whatsapp'
         }
       ],
       education: [
@@ -192,6 +202,18 @@ export default {
           value: '+7 914 066 - 0444'
         }
       }
+    }
+  },
+  mounted() {
+    console.log('mounted')
+    if (process.browser) {
+      window.onNuxtReady((app) => {
+        console.log(app)
+        this.isLoading = false
+        console.log('Nuxt ready!')
+      })
+    } else {
+      this.isLoading = false
     }
   }
 }

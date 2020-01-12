@@ -31,12 +31,6 @@ export default {
         href:
           'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic'
       }
-    ],
-    script: [
-      {
-        src: 'https://kit.fontawesome.com/12626e629e.js',
-        crossorigin: 'anonymous'
-      }
     ]
   },
   /*
@@ -52,6 +46,7 @@ export default {
    */
   plugins: [
     '~plugins/buefy.ts',
+    '~plugins/fontawesome.ts',
     { src: '~plugins/smooth-scroll.ts', mode: 'client' },
     { src: '~plugins/AOS.ts', mode: 'client' }
   ],

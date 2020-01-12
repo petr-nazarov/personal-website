@@ -1,7 +1,7 @@
 <template>
   <div class="out-wrapper">
     <div class="wrapper">
-      <div class="container ">
+      <div class="container hire-me__container">
         <h2 class="title is-2 has-text-centered" data-aos="fade-right">
           Do you have an interesting project?
         </h2>
@@ -10,7 +10,7 @@
           expertise. Contact me and we can arrange a meating!
         </p>
         <div class="has-text-centered" data-aos="fade-left">
-          <a href="#" class="button UI-button hire-me__btn">HireMe</a>
+          <a href="#" class="button UI-button hire-me__btn">Contact Me</a>
         </div>
       </div>
     </div>
@@ -48,7 +48,11 @@ export default {
   color: $white;
 }
 .hire-me {
+  &__container {
+    max-width: 960px;
+  }
   &__text {
+    font-size: 1.5rem;
     margin-top: 64px;
   }
   &__btn {

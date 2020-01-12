@@ -8,7 +8,7 @@
         <div v-for="(service, index) in services" :key="index" class="column">
           <div class="service" data-aos="flip-left">
             <div class="service__icon has-text-centered">
-              <i :class="service.icon" class="fas"></i>
+              <font-awesome-icon :icon="['fas', service.icon]" />
             </div>
             <h3 class="title is-3 has-text-centered service__title">
               {{ service.name }}
@@ -30,25 +30,25 @@ export default {
     return {
       services: [
         {
-          icon: 'fa-desktop',
+          icon: 'desktop',
           name: 'Web development',
           description:
-            'Creating web sites and web applications using latest technologies. From personal pages to E-comerce sites'
+            'Creating websites and web applications using latest technologies. From personal pages to E-commerce sites'
         },
         {
-          icon: 'fa-mobile-alt',
+          icon: 'mobile-alt',
           name: 'Mobile applications',
           description:
             'Creating IOS and Android applications using React Native'
         },
         {
-          icon: 'fa-chalkboard-teacher',
+          icon: 'chalkboard-teacher',
           name: 'Consalting',
           description:
-            'Need advise with your existing application? Or are tou planing to develop something new and looking for advise?'
+            'Need advise with your existing application? Or are you planning to develop something new and looking for advise?'
         },
         {
-          icon: 'fa-users',
+          icon: 'users',
           name: 'Leading a team',
           description:
             'If you have a development team and looking for someone to coordinate it - I am your guy.'
