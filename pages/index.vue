@@ -45,6 +45,12 @@ import Skills from '~/components/Skills.vue'
 import VFooter from '~/components/Footer.vue'
 import HireMe from '~/components/HireMe.vue'
 import Portfolio from '~/components/Portfolio.vue'
+
+interface MyWindow extends Window {
+  onNuxtReady(obj: Object): void
+}
+declare var window: MyWindow
+
 export default {
   components: {
     Loader,
