@@ -22,8 +22,9 @@ export default {
         name: 'og:description',
         content: description
       },
-      { name: 'og:type', content: 'website' }
-      // TODO { name: 'og:image', content: 'https://nuxtjs.org/meta_640.png' }
+      { name: 'og:type', content: 'website' },
+      { name: 'og:url', content: 'nazarov-petr.com' },
+      { name: 'og:image', content: '/images/profile/profile_crop.jpg' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },

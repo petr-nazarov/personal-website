@@ -28,7 +28,6 @@
       <hire-me />
       <skills id="skills" :skills="skills" />
       <portfolio id="portfolio" :portfolio="portfolio" />
-      <contact-me id="contactme" />
       <v-footer :contacts="contacts" :socials="socials" />
     </template>
     <loader v-if="isLoading" />
@@ -42,7 +41,7 @@ import AboutMe from '~/components/AboutMe.vue'
 import Services from '~/components/Services.vue'
 import Timeline from '~/components/Timeline.vue'
 import Skills from '~/components/Skills.vue'
-import ContactMe from '~/components/ContactMe.vue'
+// import ContactMe from '~/components/ContactMe.vue'
 import VFooter from '~/components/Footer.vue'
 import HireMe from '~/components/HireMe.vue'
 import Portfolio from '~/components/Portfolio.vue'
@@ -54,7 +53,7 @@ export default {
     Services,
     Timeline,
     Skills,
-    ContactMe,
+    // ContactMe,
     HireMe,
     Portfolio,
     VFooter

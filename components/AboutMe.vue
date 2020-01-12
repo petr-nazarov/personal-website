@@ -5,7 +5,7 @@
         <div class="column is-6 has-text-centered">
           <img
             class="profile-image"
-            :src="require('@/assets/images/profile/1.jpg')"
+            src="/images/profile/profile.jpg"
             alt="Petr Nazarov"
           />
         </div>
@@ -31,7 +31,7 @@
             </div>
 
             <div class="columns">
-              <div class="column is-6">
+              <div class="column is-8">
                 <div class="columns is-mobile">
                   <a
                     v-for="(social, index) in socials"
@@ -47,7 +47,7 @@
                   </a>
                 </div>
               </div>
-              <div class="column is-6"></div>
+              <div class="column is-0-tablet"></div>
             </div>
           </div>
         </div>

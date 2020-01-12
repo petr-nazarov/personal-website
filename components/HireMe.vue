@@ -10,7 +10,12 @@
           expertise. Contact me and we can arrange a meating!
         </p>
         <div class="has-text-centered" data-aos="fade-left">
-          <a href="#" class="button UI-button hire-me__btn">Contact Me</a>
+          <a
+            href="mailto:mrzueck@gmail.com"
+            target="_blank"
+            class="button UI-button hire-me__btn"
+            >Contact Me</a
+          >
         </div>
       </div>
     </div>
