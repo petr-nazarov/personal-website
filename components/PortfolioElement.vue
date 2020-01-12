@@ -20,7 +20,7 @@
             class="modal__block"
           >
             <p><b>About this project:</b></p>
-            {{ element.about }}
+            <p v-html="element.about"></p>
           </div>
           <div class="modal__block">
             <h6 class="modal__block-title">My role:</h6>

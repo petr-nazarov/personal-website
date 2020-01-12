@@ -170,7 +170,12 @@ export default {
         },
         {
           title: 'Mobile',
-          skills: ['React Native', 'React Native Redux', 'Native Script']
+          skills: [
+            'React Native',
+            'React Native Redux',
+            'React Native Maps',
+            'Native Script'
+          ]
         },
         {
           title: 'Databases',
@@ -179,6 +184,8 @@ export default {
         {
           title: 'Other',
           skills: [
+            'Bash',
+            'CI',
             'Java',
             'Typescript',
             'PWA',
@@ -197,7 +204,6 @@ export default {
         {
           title: 'Птицы Амура',
           type: 'mobile',
-          about: 'asdadsd',
           preview: require('@/assets/images/portfolio/amur-birds/preview.png'),
           full: [
             require('@/assets/images/portfolio/amur-birds/preview.png'),
@@ -224,7 +230,7 @@ export default {
         {
           title: 'Mikhail Company',
           type: 'website',
-          about: 'asdadsd',
+          about: 'A tool to place bids on japanese auto auctions',
           preview: require('@/assets/images/portfolio/mikhail/preview.png'),
           full: [
             require('@/assets/images/portfolio/mikhail/full-1.png'),
@@ -246,7 +252,7 @@ export default {
         {
           title: 'OstOptik',
           type: 'website',
-          about: 'asdadsd',
+          about: 'A company website for optics retailer',
           preview: require('@/assets/images/portfolio/ost-optik/preview.png'),
           full: [
             require('@/assets/images/portfolio/ost-optik/full-1.jpg'),
@@ -269,11 +275,11 @@ export default {
         {
           title: 'Ha-na',
           type: 'website',
-          about: `I was asked to make develop some functionality for Hana Kim - a product designer to her website.
-                  The main 3 things I did:
-                  1. I added a beautiful contact me form, designed by Hana. You should check it out :-)
-                  2. I added passcode protection to the projects. So now you can view the project only if you know the passcode.
-                  3. I added testimonials page`,
+          about: `I was asked to make develop some functionality for Hana Kim - a product designer to her website. <br/>
+                  The main 3 things I did: <br/>
+                  1. I added a beautiful contact me form, designed by Hana. You should check it out :-) <br/>
+                  2. I added passcode protection to the projects. So now you can view the project only if you know the passcode. <br/>
+                  3. I added testimonials page <br/>`,
           preview: require('@/assets/images/portfolio/ha-na/preview.png'),
           full: [
             require('@/assets/images/portfolio/ha-na/full-1.jpg'),
@@ -296,17 +302,12 @@ export default {
         {
           title: 'Financial Accounting tool',
           type: 'website',
-          about: `My job was to develop a web-based application, that would allow to financially plan and manage company cashflow and commitments. The application was also supposed to build reports based on this data. While developing, I was faced with such challenges as:
-                  -- user permission management
-                  -- database backup
-                  -- the application should be self hosted, so I created an installer.
+          about: `My job was to develop a web-based application, that would allow to financially plan and manage company cashflow and commitments. The application was also supposed to build reports based on this data. While developing, I was faced with such challenges as: <br />
+                  -- user permission management <br />
+                  -- database backup <br />
+                  -- the application should be self hosted, so I created an installer. <br />
                   -- creating PDF invoices
-                  I used the following stack of technologies:
-                  -- Node.js (Koa.js)
-                  -- mongoDB + mongoose
-                  -- Vue.js (Nuxt.js)
-                  -- Dockker
-                  -- bash installer`,
+                  `,
           preview: require('@/assets/images/portfolio/finance/preview.jpg'),
           full: [
             require('@/assets/images/portfolio/finance/full-1.jpg'),
@@ -316,7 +317,15 @@ export default {
             name: 'FrrCode',
             link: 'https://frrcode.com/'
           },
-          skills: ['Vue.js', 'Vuex', 'Node.js', 'Koa.js', 'MongoDB'],
+          skills: [
+            'Vue.js',
+            'Vuex',
+            'Node.js',
+            'Koa.js',
+            'MongoDB',
+            'Dockkr',
+            'Bash'
+          ],
           roles: [
             'Front end developer',
             'Back end developer',
