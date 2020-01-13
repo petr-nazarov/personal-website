@@ -25,9 +25,6 @@
         <b-navbar-item v-scroll-to="'#portfolio'" tag="router-link" to="#">
           Portfolio
         </b-navbar-item>
-        <b-navbar-item v-scroll-to="'#contactme'" tag="router-link" to="#">
-          Contact Me
-        </b-navbar-item>
       </template>
       <template slot="end">
         <b-navbar-item tag="a">
