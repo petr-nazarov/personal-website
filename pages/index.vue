@@ -35,9 +35,6 @@
 </template>
 
 <script lang="ts">
-/* eslint-disable no-unused-vars */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-
 import Loader from '~/components/Loader.vue'
 import VHeader from '~/components/Header.vue'
 import AboutMe from '~/components/AboutMe.vue'
@@ -48,11 +45,6 @@ import Skills from '~/components/Skills.vue'
 import VFooter from '~/components/Footer.vue'
 import HireMe from '~/components/HireMe.vue'
 import Portfolio from '~/components/Portfolio.vue'
-
-interface MyWindow extends Window {
-  onNuxtReady(obj: Object): void
-}
-declare var window: MyWindows
 
 export default {
   components: {
@@ -378,7 +370,8 @@ export default {
   },
   mounted() {
     if (process.browser) {
-      window.onNuxtReady(() => {
+      // eslint-disable-next-line dot-notation
+      window['onNuxtReady'](() => {
         this.isLoading = false
       })
     } else {
