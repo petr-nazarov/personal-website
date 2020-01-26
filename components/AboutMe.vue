@@ -5,7 +5,7 @@
         <div class="column is-6 has-text-centered">
           <img
             class="profile-image"
-            src="/images/profile/profile.jpg"
+            src="/images/profile/profile_crop.jpg"
             alt="Petr Nazarov"
           />
         </div>
@@ -70,11 +70,11 @@ export default {
 <style lang="scss" scoped>
 @import '~/assets/styles/main';
 .profile-image {
-  max-height: 410px; //mobile 310
+  // max-height: 410px; //mobile 310
   max-width: 380px;
   width: 85%;
   object-fit: cover;
-  object-position: 50% 28%;
+  //object-position: 50% 28%;
   @media (max-width: $mobile) {
     max-height: 310px;
   }

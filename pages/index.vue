@@ -35,6 +35,9 @@
 </template>
 
 <script lang="ts">
+/* eslint-disable no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import Loader from '~/components/Loader.vue'
 import VHeader from '~/components/Header.vue'
 import AboutMe from '~/components/AboutMe.vue'
@@ -49,7 +52,7 @@ import Portfolio from '~/components/Portfolio.vue'
 interface MyWindow extends Window {
   onNuxtReady(obj: Object): void
 }
-declare var window: MyWindow
+declare var window: MyWindows
 
 export default {
   components: {
