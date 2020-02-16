@@ -33,7 +33,7 @@ export default {
           icon: 'desktop',
           name: 'Web development',
           description:
-            'Creating websites and web applications using latest technologies. From personal pages to E-commerce sites'
+            'Creating websites and web applications using latest technologies. From personal pages to E-commerce sites.'
         },
         {
           icon: 'mobile-alt',
@@ -43,9 +43,9 @@ export default {
         },
         {
           icon: 'chalkboard-teacher',
-          name: 'Consalting',
+          name: 'Consulting',
           description:
-            'Need advise with your existing application? Or are you planning to develop something new and looking for advise?'
+            'Need advice with your existing application? Or are you planning to develop something new and looking for advice?'
         },
         {
           icon: 'users',

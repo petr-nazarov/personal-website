@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faDesktop, faMobileAlt, faChalkboardTeacher, faUsers, faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons'
+import { faDesktop, faMobileAlt, faChalkboardTeacher, faUsers, faEnvelope, faPhone, faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faFontAwesome, faFacebookF, faInstagram, faLinkedinIn, faGithub, faMediumM, faTelegramPlane, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
@@ -10,6 +10,7 @@ library.add(faChalkboardTeacher)
 library.add(faUsers)
 library.add(faEnvelope)
 library.add(faPhone)
+library.add(faExternalLinkAlt)
 
 library.add(faFontAwesome)
 library.add(faFacebookF)

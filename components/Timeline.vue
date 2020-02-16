@@ -9,7 +9,17 @@
         :key="index"
         class="line__element"
       >
-        <h5 class="line__title">{{ element.title }}</h5>
+        <h5 class="line__title">
+          {{ element.title }}
+          <a
+            v-if="element.link"
+            :href="element.link"
+            target="_blank"
+            class="line__external-link"
+          >
+            <font-awesome-icon :icon="['fas', 'external-link-alt']" />
+          </a>
+        </h5>
         <p class="line__date">{{ element.date }}</p>
         <div class="line__dot" />
         <h6 class="line__subtitle">{{ element.subtitle }}</h6>
@@ -67,6 +77,14 @@ export default {
     font-weight: 500;
     text-transform: uppercase;
     color: $secondary;
+  }
+  &__external-link {
+    color: $secondary;
+    font-size: 14px;
+    margin-left: 4px;
+    &:hover {
+      color: $primary;
+    }
   }
   &__subtitle {
     font-size: 14px;

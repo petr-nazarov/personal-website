@@ -94,35 +94,46 @@ export default {
       ],
       education: [
         {
-          date: '2019 - now',
+          date: '2019-2020',
           title: 'Ulpan, Tel-Aviv, Israel',
           subtitle: 'Learning Hebrew at Ulpan'
         },
         {
           date: '2018 - now',
           title: 'Far Eastern Federal University',
+          link: 'https://www.dvfu.ru/en/',
           subtitle: 'Master of Applied Mathematics and Computer Science'
         },
         {
           date: '2014 - 2018',
           title: 'Far Eastern Federal University',
+          link: 'https://www.dvfu.ru/en/',
           subtitle: 'Bachelor of Mathematics and Computer Sciences'
         },
         {
           date: '2012 - 2014',
           title: `Far Eastern Federal University - College of Humanities and Economics`,
+          link: 'https://www.dvfu.ru/en/',
           subtitle: 'Information Technologies class'
         }
       ],
       employment: [
         {
-          date: '2016 - now',
-          title: 'Founded FrrCode.com agency',
-          subtitle: `We develop Web and mobile applications for digital agencies. My main responsibility is to work with clients, manage the development of products`
+          date: '2020 - now',
+          title: 'Klerk.ru',
+          link: 'klerk.ru',
+          subtitle: `I work as an outsource front-end developer for the largest internet journal for accountants in Russia`
+        },
+        {
+          date: '2016 - 2020',
+          title: 'Founded and directed FrrCode agency',
+          link: 'frrcode.com',
+          subtitle: `We develop Web and mobile applications for digital agencies. My main responsibility was to work with clients, manage the development of products`
         },
         {
           date: '2014 - 2016',
           title: 'LTD DVIGA',
+          link: 'http://dviga.marketing/',
           subtitle: `I was a lead developer at this company, and focused mostly on E-Comerce sites`
         },
         {
@@ -202,6 +213,66 @@ export default {
         }
       ],
       portfolio: [
+        // Первый парфюмерный Online
+        {
+          title: 'Первый парфюмерный Online',
+          type: 'website',
+          about: 'Online shop for premium perfumery',
+          preview: require('@/assets/images/portfolio/1parfume/preview.jpg'),
+          full: [
+            require('@/assets/images/portfolio/1parfume/full-1.jpg'),
+            require('@/assets/images/portfolio/1parfume/full-2.jpg'),
+            require('@/assets/images/portfolio/1parfume/full-3.jpg')
+          ],
+          client: {
+            name: 'DVIGA',
+            link: 'https://dviga.marketing/'
+          },
+          skills: ['1C-Bitrix', 'PHP', 'MySQL', 'HTML', 'CSS (SASS, SCSS)'],
+          roles: [
+            'Front end developer',
+            'Back end developer',
+            'Project manager'
+          ],
+          links: [
+            {
+              title: 'Website',
+              link: `https://1parfume.com/`
+            }
+          ]
+        },
+        // Приморская газета
+        {
+          title: 'Приморская газета',
+          type: 'website',
+          about: 'The official news of the Primorsky Territory',
+          preview: require('@/assets/images/portfolio/primgazeta/preview.jpeg'),
+          full: [
+            require('@/assets/images/portfolio/primgazeta/full-1.jpg'),
+            require('@/assets/images/portfolio/primgazeta/full-2.jpg'),
+            require('@/assets/images/portfolio/primgazeta/full-3.jpg')
+          ],
+          client: {
+            name: 'RENFORT',
+            link: 'http://renfort.pro/'
+          },
+          skills: [
+            'Laravel',
+            'PHP',
+            'PostgreSQL',
+            'HTML',
+            'CSS (SASS, SCSS)',
+            'JavaScript'
+          ],
+          roles: ['Back end developer', 'Project manager'],
+          links: [
+            {
+              title: 'Website',
+              link: `http://primgazeta.ru/`
+            }
+          ]
+        },
+        // Птицы Амура
         {
           title: 'Птицы Амура',
           type: 'mobile',
@@ -228,6 +299,7 @@ export default {
             }
           ]
         },
+        // Mikhail Company
         {
           title: 'Mikhail Company',
           type: 'website',
@@ -250,6 +322,7 @@ export default {
             }
           ]
         },
+        // OstOptik
         {
           title: 'OstOptik',
           type: 'website',
@@ -273,33 +346,32 @@ export default {
             }
           ]
         },
+        // Цветы жизни
         {
-          title: 'Ha-na',
-          type: 'website',
-          about: `I was asked to make develop some functionality for Hana Kim - a product designer to her website. <br/>
-                  The main 3 things I did: <br/>
-                  1. I added a beautiful contact me form, designed by Hana. You should check it out :-) <br/>
-                  2. I added passcode protection to the projects. So now you can view the project only if you know the passcode. <br/>
-                  3. I added testimonials page <br/>`,
-          preview: require('@/assets/images/portfolio/ha-na/preview.png'),
+          title: 'Цветы жизни',
+          type: 'mobile',
+          about: `My job was to reanimate this application, update it to the new version of React Native, fix some bugs and add some functionality. And then to deploy this app to AppStore`,
+          preview: require('@/assets/images/portfolio/flowers-of-life/preview.png'),
           full: [
-            require('@/assets/images/portfolio/ha-na/full-1.jpg'),
-            require('@/assets/images/portfolio/ha-na/full-2.jpg'),
-            require('@/assets/images/portfolio/ha-na/full-3.jpg')
+            require('@/assets/images/portfolio/flowers-of-life/full-1.png'),
+            require('@/assets/images/portfolio/flowers-of-life/full-2.png'),
+            require('@/assets/images/portfolio/flowers-of-life/full-3.png'),
+            require('@/assets/images/portfolio/flowers-of-life/full-4.png')
           ],
           client: {
-            name: 'Ha-na',
-            link: 'http://nameishana.com'
+            name: 'Websee',
+            link: 'http://websee.ru/'
           },
-          skills: ['PHP', 'Jquery', 'HTML', 'JavaScript'],
-          roles: ['Front end developer', 'Back end developer'],
+          skills: ['React Native', 'Redux', 'JavaScript', 'REST API'],
+          roles: ['Mobile developer'],
           links: [
             {
-              title: 'Website',
-              link: `http://nameishana.com`
+              title: 'AppStore',
+              link: `https://apps.apple.com/ai/app/%D1%86%D0%B2%D0%B5%D1%82%D1%8B-%D0%B6%D0%B8%D0%B7%D0%BD%D0%B8/id1433864597`
             }
           ]
         },
+        // Financial Accounting tool
         {
           title: 'Financial Accounting tool',
           type: 'website',
@@ -333,30 +405,38 @@ export default {
             'Project manager'
           ]
         },
+        // Ha-na
         {
-          title: 'Цветы жизни',
-          type: 'mobile',
-          about: `My job was to reanimate this application, update it to the new version of React Native, fix some bugs and add some functionality. And then to deploy this app to AppStore`,
-          preview: require('@/assets/images/portfolio/flowers-of-life/preview.png'),
+          title: 'Ha-na',
+          type: 'website',
+          about: `I was asked to make develop some functionality for Hana Kim - a product designer to her website. <br/>
+                  The main 3 things I did: <br/>
+                  1. I added a beautiful contact me form, designed by Hana. You should check it out :-) <br/>
+                  2. I added passcode protection to the projects. So now you can view the project only if you know the passcode. <br/>
+                  3. I added testimonials page <br/>`,
+          preview: require('@/assets/images/portfolio/ha-na/preview.png'),
           full: [
-            require('@/assets/images/portfolio/flowers-of-life/full-1.png'),
-            require('@/assets/images/portfolio/flowers-of-life/full-2.png'),
-            require('@/assets/images/portfolio/flowers-of-life/full-3.png'),
-            require('@/assets/images/portfolio/flowers-of-life/full-4.png')
+            require('@/assets/images/portfolio/ha-na/full-1.jpg'),
+            require('@/assets/images/portfolio/ha-na/full-2.jpg'),
+            require('@/assets/images/portfolio/ha-na/full-3.jpg')
           ],
           client: {
-            name: 'Websee',
-            link: 'http://websee.ru/'
+            name: 'Ha-na',
+            link: 'http://nameishana.com'
           },
-          skills: ['React Native', 'Redux', 'JavaScript', 'REST API'],
-          roles: ['Mobile developer'],
+          skills: ['PHP', 'Jquery', 'HTML', 'JavaScript'],
+          roles: ['Front end developer', 'Back end developer'],
           links: [
             {
-              title: 'AppStore',
-              link: `https://apps.apple.com/ai/app/%D1%86%D0%B2%D0%B5%D1%82%D1%8B-%D0%B6%D0%B8%D0%B7%D0%BD%D0%B8/id1433864597`
+              title: 'Website',
+              link: `http://nameishana.com`
             }
           ]
         }
+        // КамчатПрофитБанк
+        // Первый парфюмерный
+        // http://primgazeta.ru/
+        // Klerk.ru
       ],
       contacts: {
         email: {
