@@ -78,7 +78,19 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    // Doc: https://github.com/nuxt-community/modules/tree/master/packages/yandex-metrika
+    [
+      '@nuxtjs/yandex-metrika',
+      {
+        id: '57556897',
+        webvisor: true,
+        clickmap: true,
+        useCDN: false,
+        trackLinks: true,
+        accurateTrackBounce: true
+      }
+    ]
   ],
   /*
    ** Axios module configuration
