@@ -8,7 +8,7 @@
         <div
           v-for="(item, index) in portfolio"
           :key="index"
-          class="column is-4"
+          class="column is-3"
         >
           <div
             @click="openModal(index)"

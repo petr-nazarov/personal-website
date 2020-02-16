@@ -36,6 +36,10 @@ export default {
         rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic'
+      },
+      {
+        rel: 'stylesheet',
+        href:'https://use.fontawesome.com/releases/v5.2.0/css/all.css'
       }
     ]
   },
