@@ -443,7 +443,7 @@ export default {
           value: 'mrzueck@gmail.com'
         },
         tel: {
-          value: '+7 914 066 - 0444'
+          value: '+972 58-5007535'
         }
       }
     }
