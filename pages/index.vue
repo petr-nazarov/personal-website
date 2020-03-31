@@ -172,10 +172,11 @@ export default {
           title: 'Back end',
           skills: [
             'Node.js',
-            'Koa.js',
             'Express.js',
-            'Strapi.io',
+            'Koa.js',
+            'Python',
             'PHP',
+            'Strapi.io',
             'Laravel',
             '1C-Bitrix'
           ]
