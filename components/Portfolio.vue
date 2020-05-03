@@ -4,16 +4,29 @@
       <h2 class="title is-2 has-text-centered" data-aos="fade-right">
         Portfolio
       </h2>
+      <div class="portfolio__taglist">
+        <div class="tags are-medium">
+          <a
+            v-for="(tag, tagIndex) in tags"
+            :key="tagIndex"
+            href="#"
+            class="tag"
+            :class="{
+              'is-dark': selectedTag == tag,
+              'is-light': selectedTag != tag
+            }"
+            @click.prevent="onTagSelect(tag)"
+          >
+            {{ tag }}
+          </a>
+        </div>
+      </div>
       <div class="columns is-multiline potfolio__container">
-        <div
-          v-for="(item, index) in portfolio"
-          :key="index"
-          class="column is-3"
-        >
+        <div v-for="(item, index) in data" :key="index" class="column is-3">
           <div
-            @click="openModal(index)"
             class="portfolio__element"
             data-aos="zoom-in"
+            @click="openModal(item.title)"
           >
             <div class="portfolio__magnifire has-text-centered">
               <i class="fas fa-search-plus fa-3x"></i>
@@ -42,12 +55,47 @@ export default {
       default: () => []
     }
   },
+  data() {
+    return {
+      data: null,
+      tags: [
+        'All',
+        'Front end',
+        'Back end',
+        'Administration',
+        'Mobile',
+        'Management'
+      ],
+      selectedTag: 'All'
+    }
+  },
+  mounted() {
+    this.filterPortfolio()
+  },
   methods: {
-    openModal(index: number) {
+    onTagSelect(tag) {
+      this.selectedTag = tag
+      this.filterPortfolio()
+    },
+    filterPortfolio() {
+      let data = []
+      if (this.selectedTag === 'All') {
+        data = this.portfolio
+      } else {
+        data = this.portfolio.filter((el) => el.tags.includes(this.selectedTag))
+      }
+
+      if (data.length > 8) {
+        data = data.slice(0, 8)
+      }
+      this.data = data
+    },
+    openModal(title: string) {
+      const element = this.portfolio.find((el) => el.title === title)
       this.$buefy.modal.open({
         parent: this,
         props: {
-          element: this.portfolio[index]
+          element
         },
         component: PortfolioElement
         // width: 320
@@ -62,6 +110,12 @@ export default {
   display: none;
 }
 .portfolio {
+  &__taglist {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
   &__magnifire {
     display: none;
     position: absolute;

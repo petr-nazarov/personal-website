@@ -232,9 +232,31 @@ export default {
         }
       ],
       portfolio: [
+        // Klerk.ru
+        {
+          title: 'Klerk.ru',
+          type: 'website',
+          tags: ['Front end'],
+          about: `Currently working as a front end developer for this project.`,
+          preview: require('@/assets/images/portfolio/klerk/preview.jpg'),
+          full: [require('@/assets/images/portfolio/klerk/full-1.jpg')],
+          client: {
+            name: 'Klerk.ru',
+            link: 'https://klerk.ru'
+          },
+          skills: ['PHP', 'Vue.js', 'Vuex', 'REST API', 'HTML', 'JavaScript'],
+          roles: ['Front end developer', 'Back end developer'],
+          links: [
+            {
+              title: 'Website',
+              link: `https://klerk.ru`
+            }
+          ]
+        },
         // Первый парфюмерный Online
         {
           title: 'Первый парфюмерный Online',
+          tags: ['Back end', 'Front end'],
           type: 'website',
           about: 'Online shop for premium perfumery',
           preview: require('@/assets/images/portfolio/1parfume/preview.jpg'),
@@ -263,6 +285,7 @@ export default {
         // Приморская газета
         {
           title: 'Приморская газета',
+          tags: ['Back end', 'Front end'],
           type: 'website',
           about: 'The official news of the Primorsky Territory',
           preview: require('@/assets/images/portfolio/primgazeta/preview.jpeg'),
@@ -295,6 +318,7 @@ export default {
         {
           title: 'Птицы Амура',
           type: 'mobile',
+          tags: ['Management'],
           preview: require('@/assets/images/portfolio/amur-birds/preview.png'),
           full: [
             require('@/assets/images/portfolio/amur-birds/preview.png'),
@@ -318,32 +342,10 @@ export default {
             }
           ]
         },
-        // Mikhail Company
-        {
-          title: 'Mikhail Company',
-          type: 'website',
-          about: 'A tool to place bids on japanese auto auctions',
-          preview: require('@/assets/images/portfolio/mikhail/preview.png'),
-          full: [
-            require('@/assets/images/portfolio/mikhail/full-1.png'),
-            require('@/assets/images/portfolio/mikhail/full-2.png')
-          ],
-          client: {
-            name: 'Mikhail company',
-            link: 'http://mkcarsjp.com/'
-          },
-          skills: ['Vue.js', 'Vuex'],
-          roles: ['Front end developer', 'Team leader'],
-          links: [
-            {
-              title: 'Website',
-              link: `http://mkcarsjp.com/`
-            }
-          ]
-        },
         // OstOptik
         {
           title: 'OstOptik',
+          tags: ['Back end', 'Front end', 'Management'],
           type: 'website',
           about: 'A company website for optics retailer',
           preview: require('@/assets/images/portfolio/ost-optik/preview.png'),
@@ -368,6 +370,7 @@ export default {
         // Цветы жизни
         {
           title: 'Цветы жизни',
+          tags: ['Mobile'],
           type: 'mobile',
           about: `My job was to reanimate this application, update it to the new version of React Native, fix some bugs and add some functionality. And then to deploy this app to AppStore`,
           preview: require('@/assets/images/portfolio/flowers-of-life/preview.png'),
@@ -394,6 +397,7 @@ export default {
         {
           title: 'Financial Accounting tool',
           type: 'website',
+          tags: ['Back end', 'Front end', 'Administration'],
           about: `My job was to develop a web-based application, that would allow to financially plan and manage company cashflow and commitments. The application was also supposed to build reports based on this data. While developing, I was faced with such challenges as: <br />
                   -- user permission management <br />
                   -- database backup <br />
@@ -424,10 +428,35 @@ export default {
             'Project manager'
           ]
         },
+        // Mikhail Company
+        {
+          title: 'Mikhail Company',
+          type: 'website',
+          about: 'A tool to place bids on japanese auto auctions',
+          tags: ['Back end', 'Front end', 'Management', 'Administration'],
+          preview: require('@/assets/images/portfolio/mikhail/preview.png'),
+          full: [
+            require('@/assets/images/portfolio/mikhail/full-1.png'),
+            require('@/assets/images/portfolio/mikhail/full-2.png')
+          ],
+          client: {
+            name: 'Mikhail company',
+            link: 'http://mkcarsjp.com/'
+          },
+          skills: ['Vue.js', 'Vuex'],
+          roles: ['Front end developer', 'Team leader'],
+          links: [
+            {
+              title: 'Website',
+              link: `http://mkcarsjp.com/`
+            }
+          ]
+        },
         // Ha-na
         {
           title: 'Ha-na',
           type: 'website',
+          tags: ['Front end'],
           about: `I was asked to make develop some functionality for Hana Kim - a product designer to her website. <br/>
                   The main 3 things I did: <br/>
                   1. I added a beautiful contact me form, designed by Hana. You should check it out :-) <br/>
@@ -453,9 +482,10 @@ export default {
           ]
         }
         // КамчатПрофитБанк
-        // Первый парфюмерный
-        // http://primgazeta.ru/
-        // Klerk.ru
+        // Cred
+        // Dream drivers
+        // Zuumph
+        // Logistic force
       ],
       contacts: {
         email: {
