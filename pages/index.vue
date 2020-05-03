@@ -120,9 +120,15 @@ export default {
       employment: [
         {
           date: '2020 - now',
+          title: 'Cred | Personalized Investing',
+          link: 'https://www.credinvest.co/',
+          subtitle: `I am full stack developer and a DevOps engineer for Cred - a company that develops investment portfolio personalization engine in Tel-Aviv, Israel`
+        },
+        {
+          date: '2020 - now',
           title: 'Klerk.ru',
           link: 'klerk.ru',
-          subtitle: `I work as an outsource front-end developer for the largest internet journal for accountants in Russia`
+          subtitle: `I work as an outsource front end developer for the largest internet journal for accountants in Russia`
         },
         {
           date: '2016 - 2020',
@@ -195,15 +201,27 @@ export default {
           skills: ['MongoDB', 'MySQL', 'SQLite', 'PostgreSQL']
         },
         {
-          title: 'Other',
+          title: 'Administration',
           skills: [
             'Bash',
-            'CI',
+            'Git',
+            'CI/DI',
+            'Docker',
+            'Kubernetes (K8s)',
+            'AWS EC2',
+            'AWS RDS',
+            'AWS EKS',
+            'AWS ECR',
+            'GitLab CI/CD',
+            'Bitbucket Pipelines'
+          ]
+        },
+        {
+          title: 'Other',
+          skills: [
             'Java',
             'Typescript',
             'PWA',
-            'Docker',
-            'Git',
             'REST API',
             'Postman',
             'Photoshop',

@@ -27,6 +27,10 @@
                 main developer in it. Right now my passion is creating Full
                 stack Node.js projects using Koa.js, Vue.js (Nuxt.js) and
                 MongoDb and creating Mobile applications using React Native.
+                <br />
+                I am in love with DevOps philosophy, and skilled in creating
+                CI/CD environment for projects using Pipelines, Docker and
+                Kubernetes.
               </p>
             </div>
 
