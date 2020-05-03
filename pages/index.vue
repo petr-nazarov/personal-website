@@ -122,7 +122,7 @@ export default {
           date: '2020 - now',
           title: 'Cred | Personalized Investing',
           link: 'https://www.credinvest.co/',
-          subtitle: `I am full stack developer and a DevOps engineer for Cred - a company that develops investment portfolio personalization engine in Tel-Aviv, Israel`
+          subtitle: `I am a full stack developer and a DevOps engineer for Cred - a company that develops investment portfolio personalization engine in Tel-Aviv, Israel`
         },
         {
           date: '2020 - now',
@@ -145,7 +145,7 @@ export default {
         {
           date: '2012 - 2014',
           title: 'Freelance',
-          subtitle: 'Developed of personal web-sites and E-Comerce sites'
+          subtitle: 'Developed personal web-sites and E-Comerce sites'
         }
       ],
       skills: [
