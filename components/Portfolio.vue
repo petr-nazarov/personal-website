@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper portfolio-wrapper">
     <div class="container">
       <h2 class="title is-2 has-text-centered" data-aos="fade-right">
         Portfolio
@@ -40,6 +40,21 @@
         </div>
       </div>
     </div>
+    <div class="modal" :class="{ 'is-active': modalActive }">
+      <div class="modal-background" @click="closeModal"></div>
+      <div class="modal-card">
+        <button
+          class="modal-close is-large"
+          aria-label="close"
+          @click="closeModal"
+        ></button>
+        <section class="modal-card-body">
+          <template v-if="modalActive">
+            <portfolio-element :element="portfolioElement" />
+          </template>
+        </section>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -48,6 +63,9 @@ import PortfolioElement from './PortfolioElement.vue'
 
 export default {
   name: 'Portfolio',
+  components: {
+    PortfolioElement
+  },
   props: {
     portfolio: {
       type: Array,
@@ -60,12 +78,14 @@ export default {
       data: null,
       tags: [
         'All',
-        'Front end',
         'Back end',
         'Administration',
+        'Front end',
         'Mobile',
         'Management'
       ],
+      portfolioElement: {},
+      modalActive: false,
       selectedTag: 'All'
     }
   },
@@ -92,23 +112,19 @@ export default {
     },
     openModal(title: string) {
       const element = this.portfolio.find((el) => el.title === title)
-      this.$buefy.modal.open({
-        parent: this,
-        props: {
-          element
-        },
-        component: PortfolioElement
-        // width: 320
-      })
+      this.portfolioElement = element
+      this.modalActive = true
+    },
+    closeModal() {
+      this.modalActive = false
+      this.portfolioElement = {}
     }
   }
 }
 </script>
 <style lang="scss" scoped>
 @import '~/assets/styles/main';
-/deep/ .modal-close {
-  display: none;
-}
+
 .portfolio {
   &__taglist {
     display: flex;
@@ -154,5 +170,14 @@ export default {
     height: auto;
     object-fit: cover;
   }
+}
+.portfolio-wrapper {
+  position: relative;
+}
+.modal {
+  position: fixed;
+}
+.modal-close {
+  position: absolute;
 }
 </style>
