@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faDesktop, faMobileAlt, faChalkboardTeacher, faUsers, faEnvelope, faPhone, faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons'
+import { faLaptopCode, faSyncAlt, faChalkboardTeacher, faUsers, faEnvelope, faPhone, faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faFontAwesome, faFacebookF, faInstagram, faLinkedinIn, faGithub, faMediumM, faTelegramPlane, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faDesktop)
-library.add(faMobileAlt)
+library.add(faLaptopCode)
+library.add(faSyncAlt)
 library.add(faChalkboardTeacher)
 library.add(faUsers)
 library.add(faEnvelope)

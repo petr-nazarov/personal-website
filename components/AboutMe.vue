@@ -19,14 +19,13 @@
                 About Me
               </h2>
               <p class="about-me-text has-text-left">
-                My name is Petr Nazarov. I am a Full Stack Web and Mobile
-                developer, with over 6 years of experience and more than 20
-                completed projects. I am a founder of outsource web-development
-                company
-                <a href="https://frrcode.com/" target="_blank">FrrCode</a> and a
-                main developer in it. Right now my passion is creating Full
-                stack Node.js projects using Koa.js, Vue.js (Nuxt.js) and
-                MongoDb and creating Mobile applications using React Native.
+                My name is Petr Nazarov. I am a <b>Node.js</b> developer and
+                <b>DevOps</b> Engineer, with over 6 years of development
+                experience and more than 20 completed projects. I founded an
+                outsource development company
+                <a href="https://frrcode.com/" target="_blank">FrrCode</a> and
+                directed it for 4 years. Now my passion is creating advanced
+                full stack applications.
                 <br />
                 I am in love with DevOps philosophy, and skilled in creating
                 CI/CD environment for projects using Pipelines, Docker and
@@ -35,7 +34,7 @@
             </div>
 
             <div class="columns">
-              <div class="column is-8">
+              <div class="column is-12">
                 <div class="columns is-mobile">
                   <a
                     v-for="(social, index) in socials"
@@ -78,6 +77,7 @@ export default {
   max-width: 380px;
   width: 85%;
   object-fit: cover;
+  border-radius: 50%;
   //object-position: 50% 28%;
   @media (max-width: $mobile) {
     max-height: 310px;

@@ -150,11 +150,46 @@ export default {
       ],
       skills: [
         {
-          title: 'Languages',
+          title: 'Back end',
           skills: [
-            'English (Advanced)',
-            'Russian (Native)',
-            'Hebrew (Beginner)'
+            'Node.js',
+            'Express.js',
+            'Koa.js',
+            'Typescript',
+            'Python',
+            'Strapi.io',
+            'PHP',
+            'Laravel',
+            '1C-Bitrix',
+            'MongoDB',
+            'MySQL',
+            'SQLite',
+            'PostgreSQL'
+          ]
+        },
+        {
+          title: 'Administration',
+          skills: [
+            'Bash',
+            'Git',
+            'CI/DI',
+            'Docker',
+            'Kubernetes (K8s)',
+            'AWS EC2',
+            'AWS RDS',
+            'AWS EKS',
+            'AWS ECR',
+            'GitLab CI/CD',
+            'Bitbucket Pipelines'
+          ]
+        },
+        {
+          title: 'Mobile',
+          skills: [
+            'React Native',
+            'React Native Redux',
+            'React Native Maps',
+            'Native Script'
           ]
         },
         {
@@ -175,52 +210,8 @@ export default {
           ]
         },
         {
-          title: 'Back end',
-          skills: [
-            'Node.js',
-            'Express.js',
-            'Koa.js',
-            'Python',
-            'PHP',
-            'Strapi.io',
-            'Laravel',
-            '1C-Bitrix'
-          ]
-        },
-        {
-          title: 'Mobile',
-          skills: [
-            'React Native',
-            'React Native Redux',
-            'React Native Maps',
-            'Native Script'
-          ]
-        },
-        {
-          title: 'Databases',
-          skills: ['MongoDB', 'MySQL', 'SQLite', 'PostgreSQL']
-        },
-        {
-          title: 'Administration',
-          skills: [
-            'Bash',
-            'Git',
-            'CI/DI',
-            'Docker',
-            'Kubernetes (K8s)',
-            'AWS EC2',
-            'AWS RDS',
-            'AWS EKS',
-            'AWS ECR',
-            'GitLab CI/CD',
-            'Bitbucket Pipelines'
-          ]
-        },
-        {
           title: 'Other',
           skills: [
-            'Java',
-            'Typescript',
             'PWA',
             'REST API',
             'Postman',
@@ -228,6 +219,14 @@ export default {
             'Sketch',
             'Figma',
             'Avocode'
+          ]
+        },
+        {
+          title: 'Languages',
+          skills: [
+            'English (Advanced)',
+            'Russian (Native)',
+            'Hebrew (Beginner)'
           ]
         }
       ],

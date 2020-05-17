@@ -30,16 +30,16 @@ export default {
     return {
       services: [
         {
-          icon: 'desktop',
-          name: 'Web development',
+          icon: 'laptop-code',
+          name: 'Web & Mobile applications',
           description:
-            'Creating websites and web applications using latest technologies. From personal pages to E-commerce sites.'
+            'Creating complex web and mobile applications, using best development practices.'
         },
         {
-          icon: 'mobile-alt',
-          name: 'Mobile applications',
+          icon: 'sync-alt',
+          name: 'DevOps (CI /CD)',
           description:
-            'Creating IOS and Android applications using React Native'
+            'Developing continuous integration and development pipelines, using Docker, Microservices, Kubernetes and other tools.'
         },
         {
           icon: 'chalkboard-teacher',
