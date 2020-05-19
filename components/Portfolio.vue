@@ -178,6 +178,9 @@ export default {
 .modal {
   position: fixed;
 }
+.modal-card-body {
+  border-radius: 16px;
+}
 .modal-close {
   position: absolute;
 }

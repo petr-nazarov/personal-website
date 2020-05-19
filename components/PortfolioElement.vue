@@ -4,8 +4,11 @@
       <div class="column">
         <b-carousel
           :pause-info="false"
-          icon-pack="fa"
-          indicator-style="is-lines"
+          icon-pack="fas"
+          icon-size="is-medium"
+          icon-prev="arrow-circle-left"
+          icon-next="arrow-circle-right"
+          indicator-style="is-dots"
         >
           <b-carousel-item v-for="(img, i) in element.full" :key="i">
             <img :src="img" :alt="element.title" class="modal__image" />
