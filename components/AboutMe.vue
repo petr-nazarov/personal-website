@@ -15,7 +15,9 @@
               <h4 class="greeting has-text-centered">
                 Hi! I'm Petr! Nice to meet you.
               </h4>
-              <h2 class="title is-2 has-text-centered has-text-secondary">
+              <h2
+                class="title is-2 about-me-title has-text-centered has-text-secondary"
+              >
                 About Me
               </h2>
               <p class="about-me-text has-text-left">
@@ -95,8 +97,13 @@ export default {
   flex-direction: column;
   justify-content: space-between;
 }
+.about-me-title {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem !important;
+}
 .about-me-text {
   margin-bottom: 32px;
+  font-size: 1.2rem;
 }
 .social-icons {
   &__element {
@@ -108,7 +115,7 @@ export default {
     }
   }
   &__icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 </style>
