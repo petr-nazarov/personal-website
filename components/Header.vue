@@ -28,17 +28,6 @@
       </template>
       <template slot="end">
         <b-navbar-item tag="a">
-          <span class="contact">
-            <font-awesome-icon :icon="['fa', 'phone']" />
-            <a
-              :href="`tel:${contacts.tel.value}`"
-              target="_blank"
-              class="contacts-link"
-              >{{ contacts.tel.value }}</a
-            >
-          </span>
-        </b-navbar-item>
-        <b-navbar-item tag="a">
           <span class="contact contact_last">
             <font-awesome-icon :icon="['fa', 'envelope']" />
             <a
@@ -46,6 +35,17 @@
               target="_blank"
               class="contacts-link"
               >{{ contacts.email.value }}</a
+            >
+          </span>
+        </b-navbar-item>
+        <b-navbar-item tag="a">
+          <span class="contact">
+            <font-awesome-icon :icon="['fa', 'phone']" />
+            <a
+              :href="`tel:${contacts.tel.value}`"
+              target="_blank"
+              class="contacts-link"
+              ><b>{{ contacts.tel.value }}</b></a
             >
           </span>
         </b-navbar-item>

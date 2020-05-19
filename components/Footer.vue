@@ -2,26 +2,6 @@
   <footer class="footer">
     <div class="container">
       <div class="columns">
-        <div class="column is-8">
-          <span class="contact">
-            <font-awesome-icon :icon="['fa', 'phone']" />
-            <a
-              :href="`tel:${contacts.tel.value}`"
-              target="_blank"
-              class="contacts-link"
-              >{{ contacts.tel.value }}</a
-            >
-          </span>
-          <span class="contact contact_last">
-            <font-awesome-icon :icon="['fa', 'envelope']" />
-            <a
-              :href="`mailto:${contacts.email.value}`"
-              target="_blank"
-              class="contacts-link"
-              >{{ contacts.email.value }}</a
-            >
-          </span>
-        </div>
         <div class="column is-4">
           <div class="columns is-mobile">
             <a
@@ -36,6 +16,33 @@
                 class="social-icons__icon"
               />
             </a>
+          </div>
+        </div>
+        <div class="column is-4"></div>
+        <div class="column is-4">
+          <div class="columns  is-gapless is-mobile">
+            <div class="column is-6">
+              <span class="contact">
+                <font-awesome-icon :icon="['fa', 'envelope']" />
+                <a
+                  :href="`mailto:${contacts.email.value}`"
+                  target="_blank"
+                  class="contacts-link"
+                  >{{ contacts.email.value }}</a
+                >
+              </span>
+            </div>
+            <div class="column is-6 has-text-right">
+              <span class="contact contact_last ">
+                <font-awesome-icon :icon="['fa', 'phone']" />
+                <a
+                  :href="`tel:${contacts.tel.value}`"
+                  target="_blank"
+                  class="contacts-link"
+                  ><b>{{ contacts.tel.value }}</b></a
+                >
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -72,10 +79,7 @@ export default {
   padding-bottom: 16px;
 }
 .contact {
-  margin-right: 16px;
-  &_last {
-    margin-right: 0;
-  }
+  white-space: nowrap;
 }
 .contacts-link {
   color: $white;
