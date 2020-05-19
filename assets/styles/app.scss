@@ -33,3 +33,16 @@ select:focus {
     background-color: $white;
   }
 }
+.UI-external-link {
+  color: $secondary;
+  &:hover {
+    color: $primary;
+  }
+
+  &__icon {
+    margin-left: 4px;
+    &_small-margin{
+      margin-left: 2px;
+    }
+  }
+}

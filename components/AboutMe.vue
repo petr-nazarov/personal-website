@@ -25,10 +25,14 @@
                 <b>DevOps</b> Engineer, with over 6 years of development
                 experience and more than 20 completed projects. I founded an
                 outsource development company
-                <a href="https://frrcode.com/" class="ext-link" target="_blank"
+                <a
+                  href="https://frrcode.com/"
+                  class="UI-external-link"
+                  target="_blank"
                   ><b>FrrCode</b>
                   <font-awesome-icon
                     size="sm"
+                    class="UI-external-link__icon UI-external-link__icon_small-margin"
                     :icon="['fas', 'external-link-alt']"
                 /></a>
                 and directed it for 4 years. Now my passion is creating advanced
@@ -122,8 +126,5 @@ export default {
   &__icon {
     font-size: 1.5rem;
   }
-}
-.ext-link {
-  color: $primary;
 }
 </style>

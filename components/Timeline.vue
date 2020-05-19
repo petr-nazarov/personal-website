@@ -10,14 +10,21 @@
         class="line__element"
       >
         <h5 class="line__title">
-          {{ element.title }}
+          <template v-if="!element.link">
+            {{ element.title }}
+          </template>
           <a
             v-if="element.link"
             :href="element.link"
             target="_blank"
-            class="line__external-link"
+            class="UI-external-link"
           >
-            <font-awesome-icon :icon="['fas', 'external-link-alt']" />
+            {{ element.title }}
+            <font-awesome-icon
+              class="UI-external-link__icon"
+              size="sm"
+              :icon="['fas', 'external-link-alt']"
+            />
           </a>
         </h5>
         <p class="line__date">{{ element.date }}</p>
@@ -77,14 +84,6 @@ export default {
     font-weight: 500;
     text-transform: uppercase;
     color: $secondary;
-  }
-  &__external-link {
-    color: $secondary;
-    font-size: 14px;
-    margin-left: 4px;
-    &:hover {
-      color: $primary;
-    }
   }
   &__subtitle {
     font-size: 14px;

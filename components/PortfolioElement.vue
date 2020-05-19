@@ -49,17 +49,25 @@
     <div v-if="element.links && element.links.length > 0" class="modal__block">
       <h6 class="modal__block-title">Links:</h6>
       <p v-for="(link, index) in element.links" :key="index">
-        <a :href="link.link" class="ext-link" target="_blank">
+        <a :href="link.link" class="UI-external-link" target="_blank">
           {{ link.title }}
-          <font-awesome-icon size="sm" :icon="['fas', 'external-link-alt']" />
+          <font-awesome-icon
+            size="sm"
+            class="UI-external-link__icon"
+            :icon="['fas', 'external-link-alt']"
+          />
         </a>
       </p>
     </div>
     <div class="modal__block">
       <h6 class="modal__block-title">Developed for:</h6>
-      <a :href="element.client.link" class="ext-link" target="_blank">
+      <a :href="element.client.link" class="UI-external-link" target="_blank">
         {{ element.client.name }}
-        <font-awesome-icon size="sm" :icon="['fas', 'external-link-alt']" />
+        <font-awesome-icon
+          size="sm"
+          class="UI-external-link__icon"
+          :icon="['fas', 'external-link-alt']"
+        />
       </a>
     </div>
   </div>
@@ -111,8 +119,5 @@ export default {
   &__tag {
     margin-bottom: 0 !important;
   }
-}
-.ext-link {
-  color: $primary;
 }
 </style>
