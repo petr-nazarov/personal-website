@@ -183,5 +183,6 @@ export default {
 }
 .modal-close {
   position: absolute;
+  z-index: 100;
 }
 </style>

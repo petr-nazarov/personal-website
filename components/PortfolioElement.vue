@@ -1,72 +1,60 @@
 <template>
   <div>
-    <div class="columns">
-      <div class="column">
-        <b-carousel
-          :pause-info="false"
-          icon-pack="fas"
-          icon-size="is-medium"
-          icon-prev="arrow-circle-left"
-          icon-next="arrow-circle-right"
-          indicator-style="is-dots"
+    <h6 class="title">{{ element.title }}</h6>
+    <b-carousel
+      :pause-info="false"
+      icon-pack="fas"
+      icon-size="is-medium"
+      icon-prev="arrow-circle-left"
+      icon-next="arrow-circle-right"
+      indicator-style="is-dots"
+    >
+      <b-carousel-item v-for="(img, i) in element.full" :key="i">
+        <img :src="img" :alt="element.title" class="modal__image" />
+      </b-carousel-item>
+    </b-carousel>
+    <div v-if="element.about && element.about.length > 0" class="modal__block">
+      <p><b>About this project:</b></p>
+      <p v-html="element.about"></p>
+    </div>
+    <div class="modal__block">
+      <h6 class="modal__block-title">My role:</h6>
+      <p class="tags modal__tags">
+        <span
+          v-for="(role, index) in element.roles"
+          :key="index"
+          class="tag modal__tag"
         >
-          <b-carousel-item v-for="(img, i) in element.full" :key="i">
-            <img :src="img" :alt="element.title" class="modal__image" />
-          </b-carousel-item>
-        </b-carousel>
-      </div>
-      <div class="column">
-        <h6 class="title">{{ element.title }}</h6>
-        <div
-          v-if="element.about && element.about.length > 0"
-          class="modal__block"
+          {{ role }}
+        </span>
+      </p>
+    </div>
+    <div
+      v-if="element.skills && element.skills.length > 0"
+      class="modal__block"
+    >
+      <h6 class="modal__block-title">Skills applied:</h6>
+      <p class="tags modal__tags">
+        <span
+          v-for="(skill, index) in element.skills"
+          :key="index"
+          class="tag modal__tag"
         >
-          <p><b>About this project:</b></p>
-          <p v-html="element.about"></p>
-        </div>
-        <div class="modal__block">
-          <h6 class="modal__block-title">My role:</h6>
-          <p class="tags modal__tags">
-            <span
-              v-for="(role, index) in element.roles"
-              :key="index"
-              class="tag modal__tag"
-            >
-              {{ role }}
-            </span>
-          </p>
-        </div>
-        <div
-          v-if="element.skills && element.skills.length > 0"
-          class="modal__block"
-        >
-          <h6 class="modal__block-title">Skills applied:</h6>
-          <p class="tags modal__tags">
-            <span
-              v-for="(skill, index) in element.skills"
-              :key="index"
-              class="tag modal__tag"
-            >
-              {{ skill }}
-            </span>
-          </p>
-        </div>
-        <div
-          v-if="element.links && element.links.length > 0"
-          class="modal__block"
-        >
-          <h6 class="modal__block-title">Links:</h6>
-          <p v-for="(link, index) in element.links" :key="index">
-            <a :href="link.link" target="_blank">{{ link.title }} </a>
-          </p>
-        </div>
-        <div class="modal__block">
-          <h6 class="modal__block-title">Developed for:</h6>
-          <a :href="element.client.link" target="_blank">
-            {{ element.client.name }}
-          </a>
-        </div>
-      </div>
+          {{ skill }}
+        </span>
+      </p>
+    </div>
+    <div v-if="element.links && element.links.length > 0" class="modal__block">
+      <h6 class="modal__block-title">Links:</h6>
+      <p v-for="(link, index) in element.links" :key="index">
+        <a :href="link.link" target="_blank">{{ link.title }} </a>
+      </p>
+    </div>
+    <div class="modal__block">
+      <h6 class="modal__block-title">Developed for:</h6>
+      <a :href="element.client.link" target="_blank">
+        {{ element.client.name }}
+      </a>
     </div>
   </div>
 </template>
@@ -94,7 +82,7 @@ export default {
   }
   &__image {
     width: 100%;
-    height: 600px;
+    height: 360px;
     margin-bottom: 16px;
     object-fit: contain;
 
