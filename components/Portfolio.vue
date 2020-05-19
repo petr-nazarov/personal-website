@@ -5,7 +5,7 @@
         Portfolio
       </h2>
       <div class="portfolio__taglist">
-        <div class="tags are-medium">
+        <div class="tags are-large">
           <a
             v-for="(tag, tagIndex) in tags"
             :key="tagIndex"

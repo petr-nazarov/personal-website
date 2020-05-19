@@ -18,12 +18,12 @@
       <p v-html="element.about"></p>
     </div>
     <div class="modal__block">
-      <h6 class="modal__block-title">My role:</h6>
+      <h6 class="modal__block-title modal__block-title_for-tags">My role:</h6>
       <p class="tags modal__tags">
         <span
           v-for="(role, index) in element.roles"
           :key="index"
-          class="tag modal__tag"
+          class="tag is-medium modal__tag"
         >
           {{ role }}
         </span>
@@ -33,12 +33,14 @@
       v-if="element.skills && element.skills.length > 0"
       class="modal__block"
     >
-      <h6 class="modal__block-title">Skills applied:</h6>
+      <h6 class="modal__block-title modal__block-title_for-tags">
+        Skills applied:
+      </h6>
       <p class="tags modal__tags">
         <span
           v-for="(skill, index) in element.skills"
           :key="index"
-          class="tag modal__tag"
+          class="tag is-medium modal__tag"
         >
           {{ skill }}
         </span>
@@ -47,13 +49,17 @@
     <div v-if="element.links && element.links.length > 0" class="modal__block">
       <h6 class="modal__block-title">Links:</h6>
       <p v-for="(link, index) in element.links" :key="index">
-        <a :href="link.link" target="_blank">{{ link.title }} </a>
+        <a :href="link.link" class="ext-link" target="_blank">
+          {{ link.title }}
+          <font-awesome-icon size="sm" :icon="['fas', 'external-link-alt']" />
+        </a>
       </p>
     </div>
     <div class="modal__block">
       <h6 class="modal__block-title">Developed for:</h6>
-      <a :href="element.client.link" target="_blank">
+      <a :href="element.client.link" class="ext-link" target="_blank">
         {{ element.client.name }}
+        <font-awesome-icon size="sm" :icon="['fas', 'external-link-alt']" />
       </a>
     </div>
   </div>
@@ -95,6 +101,9 @@ export default {
   }
   &__block-title {
     font-weight: bold;
+    &_for-tags {
+      margin-bottom: 4px;
+    }
   }
   &__tags {
     margin-bottom: 0 !important;
@@ -102,5 +111,8 @@ export default {
   &__tag {
     margin-bottom: 0 !important;
   }
+}
+.ext-link {
+  color: $primary;
 }
 </style>
