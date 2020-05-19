@@ -10,7 +10,7 @@
               <span
                 v-for="(skill, i) in group.skills"
                 :key="i"
-                class="skill tag is-white"
+                class="skill tag is-medium is-white"
                 data-aos="zoom-in"
               >
                 {{ skill }}</span
