@@ -170,6 +170,7 @@ export default {
             'AWS RDS',
             'AWS EKS',
             'AWS ECR',
+            'Sentry',
             'GitLab CI/CD',
             'Bash'
           ]
