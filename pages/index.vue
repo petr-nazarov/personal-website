@@ -145,9 +145,9 @@ export default {
           title: 'Back end',
           skills: [
             'Node.js',
+            'Typescript',
             'Express.js',
             'Koa.js',
-            'Typescript',
             'Python',
             'Strapi.io',
             'PHP',
@@ -162,30 +162,20 @@ export default {
         {
           title: 'Administration',
           skills: [
-            'Bash',
-            'Git',
             'CI/DI',
             'Docker',
             'Kubernetes (K8s)',
+            'Bitbucket Pipelines',
             'AWS EC2',
             'AWS RDS',
             'AWS EKS',
             'AWS ECR',
             'GitLab CI/CD',
-            'Bitbucket Pipelines'
+            'Bash'
           ]
         },
         {
-          title: 'Mobile',
-          skills: [
-            'React Native',
-            'React Native Redux',
-            'React Native Maps',
-            'Native Script'
-          ]
-        },
-        {
-          title: 'Front end',
+          title: 'Front end & Mobile',
           skills: [
             'HTML',
             'CSS (SASS, SCSS)',
@@ -198,7 +188,10 @@ export default {
             'jQuery',
             'Bulma',
             'Buefy',
-            'Bootstrap'
+            'Bootstrap',
+            'React Native',
+            'React Native Redux',
+            'React Native Maps'
           ]
         },
         {

@@ -1,7 +1,7 @@
 require('dotenv').config()
-const title = 'Nazarov Petr | Full stack Node.js Developer'
+const title = 'Nazarov Petr | Node.js Developer & DevOps Engineer'
 const description =
-  'A personal page of Nazarov Petr - Full stack Node.js Web and Mobile Developer'
+  'A personal page of Nazarov Petr - Full stack Node.js Developer & DevOps Engineer'
 export default {
   mode: 'universal',
   /*
