@@ -4,6 +4,7 @@
       <div class="columns">
         <div class="column is-6 has-text-centered">
           <img
+            id="aboutme"
             class="profile-image"
             src="/images/profile/profile_crop.jpg"
             alt="Petr Nazarov"

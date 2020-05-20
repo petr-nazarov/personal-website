@@ -2,32 +2,24 @@
   <div>
     <template>
       <v-header :contacts="contacts" />
-      <about-me id="aboutme" :socials="socials" />
-      <services id="services" />
+      <about-me :socials="socials" />
+      <services />
       <!-- Timelines -->
       <div class="wrapper">
         <div class="container">
           <div class="columns">
-            <div class="column">
-              <timeline
-                id="education"
-                :elements="education"
-                title="Education"
-              />
+            <div id="education" class="column">
+              <timeline :elements="education" title="Education" />
             </div>
-            <div class="column">
-              <timeline
-                id="employment"
-                :elements="employment"
-                title="Employment"
-              />
+            <div id="employment" class="column">
+              <timeline :elements="employment" title="Employment" />
             </div>
           </div>
         </div>
       </div>
       <hire-me />
-      <skills id="skills" :skills="skills" />
-      <portfolio id="portfolio" :portfolio="portfolio" />
+      <skills :skills="skills" />
+      <portfolio :portfolio="portfolio" />
       <v-footer :contacts="contacts" :socials="socials" />
     </template>
     <loader v-if="isLoading" />

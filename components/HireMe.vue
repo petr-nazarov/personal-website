@@ -7,7 +7,8 @@
         </h2>
         <p class=" hire-me__text  has-text-centered" data-aos="fade-right">
           I love chalanging projects that allow me to expand my area of
-          expertise. Contact me and we can arrange a meating!
+          expertise. <br />
+          Contact me and we can arrange a meating!
         </p>
         <div class="has-text-centered" data-aos="fade-left">
           <a

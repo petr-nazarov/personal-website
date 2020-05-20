@@ -1,7 +1,13 @@
 <template>
   <div class="wrapper">
     <div class="container">
-      <h2 class="title is-2 has-text-centered" data-aos="fade-right">Skills</h2>
+      <h2
+        id="skills"
+        class="title is-2 has-text-centered"
+        data-aos="fade-right"
+      >
+        Skills
+      </h2>
       <div class="columns">
         <div v-for="(group, index) in skills" :key="index" class="column">
           <div class="skill-group">

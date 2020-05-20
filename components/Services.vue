@@ -1,7 +1,11 @@
 <template>
   <div class="wrapper">
     <div class="container">
-      <h2 class="title is-2 has-text-centered" data-aos="fade-right">
+      <h2
+        id="services"
+        class="title is-2 has-text-centered"
+        data-aos="fade-right"
+      >
         What can i offer
       </h2>
       <div class="columns">
@@ -73,6 +77,7 @@ export default {
   background-color: $white;
   padding: 10px;
   border-bottom: 5px solid $primary;
+  border-radius: 8px;
   &:hover {
     background-color: $primary;
     color: $white;

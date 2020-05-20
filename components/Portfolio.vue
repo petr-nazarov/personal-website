@@ -1,7 +1,11 @@
 <template>
   <div class="wrapper portfolio-wrapper">
     <div class="container">
-      <h2 class="title is-2 has-text-centered" data-aos="fade-right">
+      <h2
+        id="portfolio"
+        class="title is-2 has-text-centered"
+        data-aos="fade-right"
+      >
         Portfolio
       </h2>
       <div class="portfolio__taglist">
