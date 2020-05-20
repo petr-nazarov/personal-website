@@ -2,23 +2,23 @@
   <div class="wrapper">
     <div class="container">
       <div class="columns">
-        <div class="column is-6 has-text-centered">
-          <img
-            id="aboutme"
-            class="profile-image"
-            src="/images/profile/profile_crop.jpg"
-            alt="Petr Nazarov"
-          />
+        <div class="column is-4">
+          <div class="profile-image-container">
+            <img
+              id="aboutme"
+              class="profile-image"
+              src="/images/profile/profile_crop.jpg"
+              alt="Petr Nazarov"
+            />
+          </div>
         </div>
-        <div class="column is-6">
+        <div class="column is-8">
           <div class="right-container">
             <div class="right-top-container">
-              <h4 class="greeting has-text-centered">
+              <h4 class="title is-2 about-me-title has-text-centered">
                 Hi! I'm Petr! Nice to meet you.
               </h4>
-              <h2
-                class="title is-2 about-me-title has-text-centered has-text-secondary"
-              >
+              <h2 class="greeting has-text-centered has-text-secondary">
                 About Me
               </h2>
               <p class="about-me-text has-text-left">
@@ -84,22 +84,33 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import '~/assets/styles/main';
+.profile-image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  @media (max-width: $tablet) {
+    justify-content: center;
+  }
+}
 .profile-image {
+  display: block;
   // max-height: 410px; //mobile 310
-  max-width: 380px;
   width: 85%;
   object-fit: cover;
   border-radius: 50%;
   //object-position: 50% 28%;
-  @media (max-width: $mobile) {
-    max-height: 310px;
+  @media (max-width: $tablet) {
+    max-width: 300px;
   }
 }
 .greeting {
   font-size: 1.5rem;
   color: $primary;
-  padding-top: 32px;
-  margin-bottom: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .right-container {
   display: flex;
@@ -108,8 +119,8 @@ export default {
   justify-content: space-between;
 }
 .about-me-title {
-  margin-top: 0.5rem;
-  margin-bottom: 1rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 .about-me-text {
   margin-bottom: 32px;
