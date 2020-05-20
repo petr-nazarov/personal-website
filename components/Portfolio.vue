@@ -182,8 +182,15 @@ export default {
 .modal {
   position: fixed;
 }
-.modal-card-body {
+.modal-card {
+  overflow-y: hidden;
+  padding: 0 20px !important;
   border-radius: 16px;
+  background: $white;
+}
+.modal-card-body {
+  padding: 20px 0 !important;
+  overflow-y: scroll;
 }
 .modal-close {
   position: absolute;

@@ -46,8 +46,11 @@
             </div>
 
             <div class="columns">
-              <div class="column is-12">
-                <div class="columns is-mobile">
+              <div class="column is-6 is-0-mobile"></div>
+              <div class="column is-6 is-12-mobile">
+                <div
+                  class="columns is-mobile has-text-right has-text-centered-mobile"
+                >
                   <a
                     v-for="(social, index) in socials"
                     :key="index"
