@@ -44,7 +44,7 @@
             <a
               :href="`tel:${contacts.tel.value}`"
               target="_blank"
-              class="contacts-link"
+              class="title is-3 contacts-link contacts-link_tel "
               ><b>{{ contacts.tel.value }}</b></a
             >
           </span>
@@ -77,6 +77,10 @@ export default {
   color: $primary;
   &:hover {
     color: $primary;
+  }
+
+  &_tel {
+    font-size: 1.3rem;
   }
 }
 </style>
