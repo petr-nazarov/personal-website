@@ -50,12 +50,6 @@ export default {
           name: 'Consulting',
           description:
             'Need advice with your existing application? Or are you planning to develop something new and looking for advice?'
-        },
-        {
-          icon: 'users',
-          name: 'Leading a team',
-          description:
-            'If you have a development team and looking for someone to coordinate it - I am your guy.'
         }
       ]
     }
@@ -79,13 +73,9 @@ export default {
   border-bottom: 5px solid $primary;
   border-radius: 8px;
   &:hover {
-    background-color: $primary;
-    color: $white;
-    border-bottom: 5px solid $white;
+    transform: scale(1.1) !important;
   }
-  &:hover .title {
-    color: $white;
-  }
+
   &__icon {
     font-size: 3rem;
     margin-bottom: 4px;

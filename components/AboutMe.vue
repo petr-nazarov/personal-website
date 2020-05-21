@@ -24,8 +24,8 @@
               <p class="about-me-text has-text-left">
                 My name is Petr Nazarov. I am a <b>Node.js</b> developer and
                 <b>DevOps</b> Engineer, with over 6 years of development
-                experience and more than 20 completed projects. I founded an
-                outsource development company
+                experience and more than 20 completed projects. I founded a
+                software development company
                 <a
                   href="https://frrcode.com/"
                   class="UI-external-link"
@@ -36,12 +36,13 @@
                     class="UI-external-link__icon UI-external-link__icon_small-margin"
                     :icon="['fas', 'external-link-alt']"
                 /></a>
-                and directed it for 4 years. Now my passion is creating advanced
-                full stack applications.
+                and directed it for 4 years.
                 <br />
-                I am in love with DevOps philosophy, and skilled in creating
-                CI/CD environment for projects using Pipelines, Docker and
-                Kubernetes.
+                I have vast experience in Back-end and Web development, as well
+                as in-depth practical knowledge in DevOps. My passion is
+                creating advanced full-stack applications. I am looking for
+                interesting opportunities to combine my Software & DevOps
+                Engineering skills.
               </p>
             </div>
 

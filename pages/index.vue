@@ -160,7 +160,7 @@ export default {
           ]
         },
         {
-          title: 'Administration',
+          title: 'DevOps',
           skills: [
             'CI/DI',
             'Docker',
@@ -184,15 +184,11 @@ export default {
             'Vue.js',
             'Nuxt.js',
             'Vuex',
+            'Bulma/Buefy',
             'React.js',
-            'Redux',
-            'jQuery',
-            'Bulma',
-            'Buefy',
-            'Bootstrap',
             'React Native',
-            'React Native Redux',
-            'React Native Maps'
+            'Redux',
+            'jQuery'
           ]
         },
         {

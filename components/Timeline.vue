@@ -9,27 +9,30 @@
         :key="index"
         class="line__element"
       >
-        <h5 class="line__title">
-          <template v-if="!element.link">
-            {{ element.title }}
-          </template>
-          <a
-            v-if="element.link"
-            :href="element.link"
-            target="_blank"
-            class="UI-external-link"
-          >
-            {{ element.title }}
-            <font-awesome-icon
-              class="UI-external-link__icon"
-              size="sm"
-              :icon="['fas', 'external-link-alt']"
-            />
-          </a>
-        </h5>
-        <p class="line__date">{{ element.date }}</p>
         <div class="line__dot" />
-        <h6 class="line__subtitle">{{ element.subtitle }}</h6>
+        <div class="line__right">
+          <h5 class="line__title">
+            <template v-if="!element.link">
+              {{ element.title }}
+            </template>
+            <a
+              v-if="element.link"
+              :href="element.link"
+              target="_blank"
+              class="UI-external-link"
+            >
+              {{ element.title }}
+              <font-awesome-icon
+                class="UI-external-link__icon"
+                size="sm"
+                :icon="['fas', 'external-link-alt']"
+              />
+            </a>
+          </h5>
+          <p class="line__date">{{ element.date }}</p>
+
+          <h6 class="line__subtitle">{{ element.subtitle }}</h6>
+        </div>
       </div>
     </div>
   </div>
@@ -69,6 +72,13 @@ export default {
     padding-bottom: 16px;
     padding-left: 32px;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &right {
+    display: block;
   }
   &__dot {
     width: 16px;
@@ -92,6 +102,25 @@ export default {
   &__date {
     font-size: 15px;
     color: $secondary;
+  }
+}
+.line__element:hover {
+  .line__subtitle,
+  .line__date,
+  .line__title,
+  .line__dot {
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+  }
+  .line__subtitle,
+  .line__date,
+  .line__title {
+    padding-left: 20px;
+    transform: scale(1.05);
+  }
+  .line__dot {
+    transform: scale(1.2);
   }
 }
 </style>
