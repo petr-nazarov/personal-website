@@ -111,13 +111,13 @@ export default {
       ],
       employment: [
         {
-          date: '2020 - now',
-          title: 'Cred | Personalized Investing',
+          date: 'March 2020 - June 2020',
+          title: 'Internship at Cred',
           link: 'https://www.credinvest.co/',
           subtitle: `I am a Full Stack web Developer and a DevOps Engineer for Cred - a company that develops investment portfolio personalization engine in Tel-Aviv, Israel`
         },
         {
-          date: '2020 - now',
+          date: 'Jan 2020 - now',
           title: 'Klerk.ru',
           link: 'klerk.ru',
           subtitle: `I work as an outsource front end developer for the largest internet journal for accountants in Russia`
