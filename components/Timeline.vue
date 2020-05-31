@@ -104,23 +104,25 @@ export default {
     color: $secondary;
   }
 }
-.line__element:hover {
-  .line__subtitle,
-  .line__date,
-  .line__title,
-  .line__dot {
-    transition-property: all;
-    transition-timing-function: ease;
-    transition-duration: 0.4s;
-  }
-  .line__subtitle,
-  .line__date,
-  .line__title {
-    padding-left: 20px;
-    transform: scale(1.05);
-  }
-  .line__dot {
-    transform: scale(1.2);
+.line__subtitle,
+.line__date,
+.line__title,
+.line__dot {
+  transition-property: all;
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
+}
+@media (min-width: $tablet) {
+  .line__element:hover {
+    .line__subtitle,
+    .line__date,
+    .line__title {
+      padding-left: 20px;
+      transform: scale(1.05);
+    }
+    .line__dot {
+      transform: scale(1.2);
+    }
   }
 }
 </style>

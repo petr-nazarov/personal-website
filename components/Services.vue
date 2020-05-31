@@ -9,7 +9,12 @@
         What can i offer
       </h2>
       <div class="columns">
-        <div v-for="(service, index) in services" :key="index" class="column">
+        <div
+          v-for="(service, index) in services"
+          :key="index"
+          class="column"
+          :class="{ 'is-offset-1': index == 1 || index == 2 }"
+        >
           <div class="service" data-aos="flip-left">
             <div class="service__icon has-text-centered">
               <font-awesome-icon :icon="['fas', service.icon]" />
@@ -72,8 +77,10 @@ export default {
   padding: 10px;
   border-bottom: 5px solid $primary;
   border-radius: 8px;
-  &:hover {
-    transform: scale(1.1) !important;
+  @media (min-width: $tablet) {
+    &:hover {
+      transform: scale(1.1) !important;
+    }
   }
 
   &__icon {
