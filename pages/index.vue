@@ -217,8 +217,8 @@ export default {
         {
           title: 'Deployment and automation process for Cred.',
           tags: ['DevOps', 'Back end'],
-          about: `While working with Cred, I:
-                  -- Developed pipelines that ran on each merge request to master, that allowed us to test our code automatically. <br/>
+          about: `While working with Cred, I: <br/>
+                  -- Developed pipelines to run on each merge request to master, that allowed us to test our code automatically. <br/>
                   -- Dockerized our development environment, that allowed our developers to be environment and platform independent while working on the project <br/>
                   -- Developed architecture for our Amazon Elastic Kubernetes Service, using Deployments, Services and Ingress, that allowed us to have a stable, staging and production environments <br/>
                   -- Developed automatic deployment processes that deployed our application on Amazon Elastic Container Service as a Docker Image, and then deployed a container from that image to our Kubernetes cluster.`,
