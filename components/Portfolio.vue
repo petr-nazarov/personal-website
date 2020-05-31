@@ -80,14 +80,7 @@ export default {
   data() {
     return {
       data: null,
-      tags: [
-        'All',
-        'Back end',
-        'Administration',
-        'Front end',
-        'Mobile',
-        'Management'
-      ],
+      tags: ['All', 'DevOps', 'Back end', 'Front end', 'Mobile', 'Management'],
       portfolioElement: {},
       modalActive: false,
       selectedTag: 'All'

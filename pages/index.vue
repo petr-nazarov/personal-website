@@ -213,6 +213,41 @@ export default {
         }
       ],
       portfolio: [
+        // Cred
+        {
+          title: 'Deployment and automation process for Cred.',
+          tags: ['DevOps', 'Back end'],
+          about: `While working with Cred, I:
+                  -- Developed pipelines that ran on each merge request to master, that allowed us to test our code automatically. <br/>
+                  -- Dockerized our development environment, that allowed our developers to be environment and platform independent while working on the project <br/>
+                  -- Developed architecture for our Amazon Elastic Kubernetes Service, using Deployments, Services and Ingress, that allowed us to have a stable, staging and production environments <br/>
+                  -- Developed automatic deployment processes that deployed our application on Amazon Elastic Container Service as a Docker Image, and then deployed a container from that image to our Kubernetes cluster.`,
+          preview: require('@/assets/images/portfolio/cred/preview.png'),
+          full: [
+            require('@/assets/images/portfolio/cred/full-1.jpg'),
+            require('@/assets/images/portfolio/cred/full-2.jpg'),
+            require('@/assets/images/portfolio/cred/full-3.jpg')
+          ],
+          client: {
+            name: 'Cred',
+            link: 'https://www.credinvest.co/'
+          },
+          skills: [
+            'CI/DI',
+            'Docker',
+            'Kubernetes (K8s)',
+            'Bitbucket Pipelines',
+            'AWS RDS',
+            'AWS EKS',
+            'AWS ECR',
+            'Node.js',
+            'Koa.js',
+            'Typescript',
+            'Python',
+            'PostgreSQL'
+          ],
+          roles: ['Back end developer', 'DevOps Engineer']
+        },
         // Klerk.ru
         {
           title: 'Klerk.ru',
@@ -232,6 +267,41 @@ export default {
               title: 'Website',
               link: `https://klerk.ru`
             }
+          ]
+        },
+        // Financial Accounting tool
+        {
+          title: 'Financial Accounting tool',
+          type: 'website',
+          tags: ['Back end', 'Front end', 'DevOps'],
+          about: `My job was to develop a web-based application, that would allow to financially plan and manage company cashflow and commitments. The application was also supposed to build reports based on this data. While developing, I was faced with such challenges as: <br />
+                    -- user permission management <br />
+                    -- database backup <br />
+                    -- the application should be self hosted, so I created an installer. <br />
+                    -- creating PDF invoices
+                    `,
+          preview: require('@/assets/images/portfolio/finance/preview.jpg'),
+          full: [
+            require('@/assets/images/portfolio/finance/full-1.jpg'),
+            require('@/assets/images/portfolio/finance/full-2.jpg')
+          ],
+          client: {
+            name: 'FrrCode',
+            link: 'https://frrcode.com/'
+          },
+          skills: [
+            'Vue.js',
+            'Vuex',
+            'Node.js',
+            'Koa.js',
+            'MongoDB',
+            'Dockkr',
+            'Bash'
+          ],
+          roles: [
+            'Front end developer',
+            'Back end developer',
+            'Project manager'
           ]
         },
         // Первый парфюмерный Online
@@ -374,47 +444,12 @@ export default {
             }
           ]
         },
-        // Financial Accounting tool
-        {
-          title: 'Financial Accounting tool',
-          type: 'website',
-          tags: ['Back end', 'Front end', 'Administration'],
-          about: `My job was to develop a web-based application, that would allow to financially plan and manage company cashflow and commitments. The application was also supposed to build reports based on this data. While developing, I was faced with such challenges as: <br />
-                  -- user permission management <br />
-                  -- database backup <br />
-                  -- the application should be self hosted, so I created an installer. <br />
-                  -- creating PDF invoices
-                  `,
-          preview: require('@/assets/images/portfolio/finance/preview.jpg'),
-          full: [
-            require('@/assets/images/portfolio/finance/full-1.jpg'),
-            require('@/assets/images/portfolio/finance/full-2.jpg')
-          ],
-          client: {
-            name: 'FrrCode',
-            link: 'https://frrcode.com/'
-          },
-          skills: [
-            'Vue.js',
-            'Vuex',
-            'Node.js',
-            'Koa.js',
-            'MongoDB',
-            'Dockkr',
-            'Bash'
-          ],
-          roles: [
-            'Front end developer',
-            'Back end developer',
-            'Project manager'
-          ]
-        },
         // Mikhail Company
         {
           title: 'Mikhail Company',
           type: 'website',
           about: 'A tool to place bids on japanese auto auctions',
-          tags: ['Back end', 'Front end', 'Management', 'Administration'],
+          tags: ['Back end', 'Front end', 'Management', 'DevOps'],
           preview: require('@/assets/images/portfolio/mikhail/preview.png'),
           full: [
             require('@/assets/images/portfolio/mikhail/full-1.png'),
