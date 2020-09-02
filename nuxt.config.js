@@ -6,7 +6,7 @@ export default {
   mode: 'universal',
   target: 'static',
   router: {
-    base: '/<repository-name>/'
+    base: '/personal-website/'
   },
   /*
    ** Headers of the page
