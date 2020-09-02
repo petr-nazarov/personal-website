@@ -9,6 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix"
   },
@@ -28,6 +29,7 @@
     "bulma": "^0.8.0",
     "node-sass": "^4.13.0",
     "nuxt": "^2.0.0",
+    "push-dir": "^0.4.1",
     "sass-loader": "^8.0.0",
     "stylelint-config-recommended-scss": "^4.1.0",
     "stylelint-scss": "^3.13.0",

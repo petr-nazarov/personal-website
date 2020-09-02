@@ -4,6 +4,7 @@ const description =
   'A personal page of Nazarov Petr - Full stack Node.js Developer & DevOps Engineer'
 export default {
   mode: 'universal',
+  target: 'static',
   /*
    ** Headers of the page
    */
