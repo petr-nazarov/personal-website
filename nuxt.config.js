@@ -5,6 +5,9 @@ const description =
 export default {
   mode: 'universal',
   target: 'static',
+  router: {
+    base: '/<repository-name>/'
+  },
   /*
    ** Headers of the page
    */
