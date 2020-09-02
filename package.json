@@ -34,7 +34,7 @@
     "stylelint-config-recommended-scss": "^4.1.0",
     "stylelint-scss": "^3.13.0",
     "vue-scrollto": "^2.17.1",
-    "yarn": "^1.21.1"
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.5.5",
