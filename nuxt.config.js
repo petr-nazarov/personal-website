@@ -5,6 +5,10 @@ const description =
 export default {
   mode: 'universal',
   target: 'static',
+  buildDir: 'docs',
+  generate: {
+    dir: 'docs'
+  },
   /*
    ** Headers of the page
    */
