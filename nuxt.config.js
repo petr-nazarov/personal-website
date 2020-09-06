@@ -5,9 +5,6 @@ const description =
 export default {
   mode: 'universal',
   target: 'static',
-  router: {
-    base: '/personal-website/'
-  },
   /*
    ** Headers of the page
    */
@@ -43,7 +40,7 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href:'https://use.fontawesome.com/releases/v5.2.0/css/all.css'
+        href: 'https://use.fontawesome.com/releases/v5.2.0/css/all.css'
       }
     ]
   },
