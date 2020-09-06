@@ -3,12 +3,9 @@ const title = 'Nazarov Petr | Node.js Developer & DevOps Engineer'
 const description =
   'A personal page of Nazarov Petr - Full stack Node.js Developer & DevOps Engineer'
 export default {
-  mode: 'universal',
+  mode: 'spa',
   target: 'static',
   buildDir: 'docs',
-  generate: {
-    dir: 'docs'
-  },
   /*
    ** Headers of the page
    */
@@ -44,7 +41,7 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href:'https://use.fontawesome.com/releases/v5.2.0/css/all.css'
+        href: 'https://use.fontawesome.com/releases/v5.2.0/css/all.css'
       }
     ]
   },
