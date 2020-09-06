@@ -11,7 +11,6 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_yandexmetrikaplugind8361dda_e373ff8e from 'nuxt_plugin_yandexmetrikaplugind8361dda_e373ff8e' // Source: ./yandex-metrika.plugin.d8361dda.js (mode: 'client')
 import nuxt_plugin_axios_54a195fe from 'nuxt_plugin_axios_54a195fe' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_buefy_d12699c2 from 'nuxt_plugin_buefy_d12699c2' // Source: ../plugins/buefy.ts (mode: 'all')
 import nuxt_plugin_fontawesome_21e93510 from 'nuxt_plugin_fontawesome_21e93510' // Source: ../plugins/fontawesome.ts (mode: 'all')
@@ -149,10 +148,6 @@ async function createApp (ssrContext) {
   }
 
   // Plugin execution
-
-  if (process.client && typeof nuxt_plugin_yandexmetrikaplugind8361dda_e373ff8e === 'function') {
-    await nuxt_plugin_yandexmetrikaplugind8361dda_e373ff8e(app.context, inject)
-  }
 
   if (typeof nuxt_plugin_axios_54a195fe === 'function') {
     await nuxt_plugin_axios_54a195fe(app.context, inject)

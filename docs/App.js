@@ -7,13 +7,14 @@ import {
 } from './utils'
 
 import NuxtLoading from './components/nuxt-loading.vue'
+import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import _6f6c098b from '../layouts/default.vue'
 
 const layouts = { "_default": _6f6c098b }
 
 export default {
-  head: {"title":"Nazarov Petr | Node.js Developer & DevOps Engineer","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"A personal page of Nazarov Petr - Full stack Node.js Developer & DevOps Engineer"},{"name":"og:title","content":"Nazarov Petr | Node.js Developer & DevOps Engineer"},{"name":"og:description","content":"A personal page of Nazarov Petr - Full stack Node.js Developer & DevOps Engineer"},{"name":"og:type","content":"website"},{"name":"og:url","content":"nazarov-petr.com"},{"name":"og:image","content":"\u002Fimages\u002Fprofile\u002Fprofile_crop.jpg"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.png"},{"rel":"canonical","href":"https:\u002F\u002Fpetr-nazarov.com\u002F"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic"},{"rel":"stylesheet","href":"https:\u002F\u002Fuse.fontawesome.com\u002Freleases\u002Fv5.2.0\u002Fcss\u002Fall.css"},{"href":"https:\u002F\u002Fmc.yandex.ru\u002Fmetrika\u002Ftag.js","rel":"preload","as":"script"}],"style":[],"script":[{"src":"https:\u002F\u002Fmc.yandex.ru\u002Fmetrika\u002Ftag.js","async":"true"}]},
+  head: {"title":"Nazarov Petr | Node.js Developer & DevOps Engineer","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"A personal page of Nazarov Petr - Full stack Node.js Developer & DevOps Engineer"},{"name":"og:title","content":"Nazarov Petr | Node.js Developer & DevOps Engineer"},{"name":"og:description","content":"A personal page of Nazarov Petr - Full stack Node.js Developer & DevOps Engineer"},{"name":"og:type","content":"website"},{"name":"og:url","content":"nazarov-petr.com"},{"name":"og:image","content":"\u002Fimages\u002Fprofile\u002Fprofile_crop.jpg"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.png"},{"rel":"canonical","href":"https:\u002F\u002Fpetr-nazarov.com\u002F"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic"},{"rel":"stylesheet","href":"https:\u002F\u002Fuse.fontawesome.com\u002Freleases\u002Fv5.2.0\u002Fcss\u002Fall.css"}],"style":[],"script":[]},
 
   render (h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })
@@ -47,7 +48,7 @@ export default {
       }
     }, [
       loadingEl,
-
+      h(NuxtBuildIndicator),
       transitionEl
     ])
   },
@@ -157,6 +158,10 @@ export default {
     },
 
     setLayout (layout) {
+      if(layout && typeof layout !== 'string') {
+        throw new Error('[nuxt] Avoid using non-string value as layout property.')
+      }
+
       if (!layout || !layouts['_' + layout]) {
         layout = 'default'
       }
