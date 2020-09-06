@@ -5,9 +5,6 @@ const description =
 export default {
   mode: 'universal',
   target: 'static',
-  router: {
-    base: '/personal-website/'
-  },
   /*
    ** Headers of the page
    */
