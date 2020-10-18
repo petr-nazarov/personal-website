@@ -68,7 +68,7 @@ export default {
           icon: 'linkedin-in'
         },
         {
-          link: 'https://github.com/nazarov-petr',
+          link: 'https://github.com/petr-nazarov',
           icon: 'github'
         },
         {
@@ -80,7 +80,7 @@ export default {
           icon: 'telegram-plane'
         },
         {
-          link: 'https://wa.me/79140660444',
+          link: 'https://wa.me/972585007535',
           icon: 'whatsapp'
         }
       ],
