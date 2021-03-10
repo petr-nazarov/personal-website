@@ -10,14 +10,14 @@
         <b-navbar-item v-scroll-to="'#aboutme'" tag="router-link" to="#">
           About Me
         </b-navbar-item>
-        <b-navbar-item v-scroll-to="'#services'" tag="router-link" to="#">
+        <!-- <b-navbar-item v-scroll-to="'#services'" tag="router-link" to="#">
           Services
+        </b-navbar-item> -->
+        <b-navbar-item v-scroll-to="'#employment'" tag="router-link" to="#">
+          Employment
         </b-navbar-item>
         <b-navbar-item v-scroll-to="'#education'" tag="router-link" to="#">
           Education
-        </b-navbar-item>
-        <b-navbar-item v-scroll-to="'#employment'" tag="router-link" to="#">
-          Employment
         </b-navbar-item>
         <b-navbar-item v-scroll-to="'#skills'" tag="router-link" to="#">
           Skills

@@ -22,10 +22,10 @@
                 About Me
               </h2>
               <p class="about-me-text has-text-left">
-                My name is Petr Nazarov. I am a <b>Node.js</b> developer and
-                <b>DevOps</b> Engineer, with over 6 years of development
-                experience and more than 20 completed projects. I founded a
-                software development company
+                My name is Petr Nazarov. I am a
+                <b>Software Developer</b> and <b>DevOps</b> Engineer, with over
+                7 years of development experience and more than 20 completed
+                projects. I founded a software development company
                 <a
                   href="https://frrcode.com/"
                   class="UI-external-link"
@@ -44,6 +44,20 @@
                 interesting opportunities to combine my Software & DevOps
                 Engineering skills.
               </p>
+              <div class="interested-in">
+                <h3 class="subtitle is-4 interested-in__title">
+                  Interested in positions:
+                </h3>
+                <div class="tags">
+                  <span
+                    class="tag is-medium interested-in__position"
+                    v-for="(position, positionIndex) in positions"
+                    :key="positionIndex"
+                  >
+                    {{ position }}</span
+                  >
+                </div>
+              </div>
             </div>
 
             <div class="columns">
@@ -82,6 +96,17 @@ export default {
     socials: {
       type: Array,
       required: true
+    }
+  },
+  data() {
+    return {
+      positions: [
+        'Software Engineer',
+        'Software Architect',
+        'DevOps Engineer',
+        'Full Stack Developer',
+        'Software Developer'
+      ]
     }
   }
 }
@@ -129,6 +154,19 @@ export default {
 .about-me-text {
   margin-bottom: 32px;
   font-size: 1.2rem;
+}
+.interested-in {
+  &__title {
+    margin-bottom: 0.5rem !important;
+  }
+  &__position {
+    cursor: default;
+    &:hover {
+      background: $primary !important;
+      color: $white !important;
+    }
+  }
+  margin-bottom: 32px;
 }
 .social-icons {
   &__element {

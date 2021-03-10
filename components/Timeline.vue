@@ -7,7 +7,7 @@
       <div
         v-for="(element, index) in elements"
         :key="index"
-        class="line__element"
+        class="line__element "
       >
         <div class="line__dot" />
         <div class="line__right">
@@ -29,9 +29,17 @@
               />
             </a>
           </h5>
-          <p class="line__date">{{ element.date }}</p>
-
           <h6 class="line__subtitle">{{ element.subtitle }}</h6>
+          <p class="line__date">{{ element.date }}</p>
+          <ul v-if="element.tasks" class="line__tasks">
+            <li
+              v-for="(task, taskIndex) in element.tasks"
+              :key="taskIndex"
+              class="line__tasks_element"
+            >
+              - {{ task }}
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -96,18 +104,27 @@ export default {
     color: $secondary;
   }
   &__subtitle {
-    font-size: 14px;
+    font-size: 1rem;
     color: $secondary;
   }
+  &__tasks {
+    &_element {
+      font-size: 1rem;
+      color: $secondary;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
   &__date {
-    font-size: 15px;
+    font-size: 1rem;
     color: $secondary;
   }
 }
 .line__subtitle,
 .line__date,
 .line__title,
-.line__dot {
+.line__dot,
+.line__tasks {
   transition-property: all;
   transition-timing-function: ease;
   transition-duration: 0.4s;
@@ -116,7 +133,8 @@ export default {
   .line__element:hover {
     .line__subtitle,
     .line__date,
-    .line__title {
+    .line__title,
+    .line__tasks {
       padding-left: 20px;
       transform: scale(1.05);
     }

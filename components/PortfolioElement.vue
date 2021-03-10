@@ -15,6 +15,7 @@
     </b-carousel>
     <div v-if="element.about && element.about.length > 0" class="modal__block">
       <p><b>About this project:</b></p>
+      <!-- eslint-disable-next-line vue/no-v-html -->
       <p v-html="element.about"></p>
     </div>
     <div class="modal__block">

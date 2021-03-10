@@ -3,22 +3,21 @@
     <template>
       <v-header :contacts="contacts" />
       <about-me :socials="socials" />
-      <services />
-      <!-- Timelines -->
+      <!-- <services /> -->
+      <skills :skills="skills" />
       <div class="wrapper">
         <div class="container">
           <div class="columns">
-            <div id="education" class="column">
-              <timeline :elements="education" title="Education" />
-            </div>
             <div id="employment" class="column">
               <timeline :elements="employment" title="Employment" />
+            </div>
+            <div id="education" class="column">
+              <timeline :elements="education" title="Education" />
             </div>
           </div>
         </div>
       </div>
       <hire-me />
-      <skills :skills="skills" />
       <portfolio :portfolio="portfolio" />
       <v-footer :contacts="contacts" :socials="socials" />
     </template>
@@ -30,7 +29,7 @@
 import Loader from '~/components/Loader.vue'
 import VHeader from '~/components/Header.vue'
 import AboutMe from '~/components/AboutMe.vue'
-import Services from '~/components/Services.vue'
+// import Services from '~/components/Services.vue'
 import Timeline from '~/components/Timeline.vue'
 import Skills from '~/components/Skills.vue'
 // import ContactMe from '~/components/ContactMe.vue'
@@ -43,7 +42,7 @@ export default {
     Loader,
     VHeader,
     AboutMe,
-    Services,
+    // Services,
     Timeline,
     Skills,
     // ContactMe,
@@ -114,30 +113,53 @@ export default {
           date: '2020 - Now',
           title: 'Cred',
           link: 'https://www.credinvest.co/',
-          subtitle: `I am a Full Stack web Developer and a DevOps Engineer for Cred - a company that develops investment portfolio personalization engine in Tel-Aviv, Israel`
+          subtitle: `Full Stack web Developer and DevOps Engineer`,
+          tasks: [
+            'Developed and maintained applications microservice architecture.',
+            'Developed a CI/CD process from scratch.',
+            'Migrated our application to AWS, using EKS (Kubernetes), ECR for high performance and high availability.',
+            'Integrated with 3d party APIs',
+            'Programmed'
+          ]
         },
         {
           date: 'Jan 2020 - Jun 2020',
           title: 'Klerk.ru',
           link: 'klerk.ru',
-          subtitle: `I work as an outsource front end developer for the largest internet journal for accountants in Russia`
+          subtitle: `Full Stack Developer`,
+          tasks: [
+            'Was part of a front end development team using Vue.js',
+            'Created a reusable grid and UI Components system',
+            'Programmed back end using PHP'
+          ]
         },
         {
           date: '2016 - 2020',
           title: 'Founded and directed FrrCode agency',
           link: 'frrcode.com',
-          subtitle: `We develop Web and mobile applications for digital agencies. My main responsibility was to work with clients, manage the development of products`
+          subtitle: `Company owner`,
+          tasks: [
+            'Managed a team of 8 developers',
+            'Designed architecture for our customers',
+            'Created web apps (Vue.js, Node.js, PHP, Laravel)',
+            'Created cross-platform mobile applications (React Native)'
+          ]
         },
         {
           date: '2014 - 2016',
           title: 'LTD DVIGA',
           link: 'http://dviga.marketing/',
-          subtitle: `I was a lead developer at this company, and focused mostly on E-Comerce sites`
+          subtitle: `Full Stack Developer`,
+          tasks: [
+            'Was the leading developer',
+            'Developed web applications (Node.js, PHP, Jquery, Bitrix)'
+          ]
         },
         {
           date: '2012 - 2014',
           title: 'Freelance',
-          subtitle: 'Developed personal web-sites and E-Comerce sites'
+          subtitle: 'Full Stack Developer',
+          tasks: ['Created web apps (Vue.js, Node.js, PHP, Laravel, Bitrix)']
         }
       ],
       skills: [
@@ -146,13 +168,14 @@ export default {
           skills: [
             'Node.js',
             'Typescript',
-            'Express.js',
+            'Apache Kafka',
             'Koa.js',
+            'Express.js',
             'Python',
             'Strapi.io',
-            'PHP',
             'Laravel',
-            '1C-Bitrix',
+            'PHP',
+            // '1C-Bitrix',
             'MongoDB',
             'MySQL',
             'SQLite',
@@ -164,12 +187,15 @@ export default {
           skills: [
             'CI/DI',
             'Docker',
-            'Kubernetes (K8s)',
-            'Bitbucket Pipelines',
+            'Kubernetes',
+            'Terraform',
             'AWS EC2',
             'AWS RDS',
             'AWS EKS',
             'AWS ECR',
+            'AWS SQS',
+            'Versel',
+            'Heroku',
             'Sentry',
             'GitLab CI/CD',
             'Bash'
@@ -194,6 +220,7 @@ export default {
         {
           title: 'Other',
           skills: [
+            'JIRA Administration',
             'PWA',
             'REST API',
             'Postman',
