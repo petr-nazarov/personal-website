@@ -21,11 +21,12 @@
               <h2 class="greeting has-text-centered has-text-secondary">
                 About Me
               </h2>
+
               <p class="about-me-text has-text-left">
-                My name is Petr Nazarov. I am a
-                <b>Software Developer</b> and <b>DevOps</b> Engineer, with over
-                7 years of development experience and more than 20 completed
-                projects. I founded a software development company
+                My name is Petr Nazarov. <b>Software Developer</b> and
+                <b>DevOps Engineer</b> with over 7 years of development
+                experience and more than 20 completed projects. I founded a
+                software development company
                 <a
                   href="https://frrcode.com/"
                   class="UI-external-link"
@@ -39,10 +40,13 @@
                 and directed it for 4 years.
                 <br />
                 I have vast experience in Back-end and Web development, as well
-                as in-depth practical knowledge in DevOps. My passion is
-                creating advanced full-stack applications. I am looking for
-                interesting opportunities to combine my Software & DevOps
-                Engineering skills.
+                as in-depth practical knowledge in DevOps. Now I am passionate
+                about designing highly available, complex systems. Always
+                keeping my eyes open for the latest best practices and new
+                technologies in Automating tasks, Cloud Computing, and
+                Development Frameworks.<br />
+                I am looking for interesting opportunities to combine my
+                Software Architecture and DevOps Engineering skills.
               </p>
               <!-- Interested in -->
               <div class="interested-in">

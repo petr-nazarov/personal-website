@@ -116,10 +116,10 @@ export default {
           subtitle: `Full Stack web Developer and DevOps Engineer`,
           tasks: [
             'Developed and maintained applications microservice architecture.',
-            'Developed a CI/CD process from scratch.',
+            'Integrated a CI/CD process from scratch.',
             'Migrated our application to AWS, using EKS (Kubernetes), ECR for high performance and high availability.',
             'Integrated with 3d party APIs',
-            'Programmed'
+            'Developed front and back end applications'
           ]
         },
         {
@@ -233,7 +233,7 @@ export default {
         {
           title: 'Languages',
           skills: [
-            'English (Advanced)',
+            'English (Second Native)',
             'Russian (Native)',
             'Hebrew (Beginner)'
           ]
