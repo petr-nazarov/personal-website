@@ -52,6 +52,7 @@ export default {
 }
 .group-title {
   font-weight: 700;
+  font-size: 1.2rem;
   margin-bottom: 8px;
 }
 .skill {

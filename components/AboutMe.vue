@@ -44,10 +44,12 @@
                 interesting opportunities to combine my Software & DevOps
                 Engineering skills.
               </p>
+              <!-- Interested in -->
               <div class="interested-in">
-                <h3 class="subtitle is-4 interested-in__title">
+                <h2 class="greeting has-text-centered has-text-secondary">
                   Interested in positions:
-                </h3>
+                </h2>
+
                 <div class="tags">
                   <span
                     class="tag is-medium interested-in__position"
@@ -58,29 +60,6 @@
                   >
                 </div>
               </div>
-            </div>
-
-            <div class="columns">
-              <div class="column is-6 is-0-mobile"></div>
-              <div class="column is-6 is-12-mobile">
-                <div
-                  class="columns is-mobile has-text-right has-text-centered-mobile"
-                >
-                  <a
-                    v-for="(social, index) in socials"
-                    :key="index"
-                    :href="social.link"
-                    class="column social-icons__element"
-                    target="_blank"
-                  >
-                    <font-awesome-icon
-                      :icon="['fab', social.icon]"
-                      class="social-icons__icon fab"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="column is-0-tablet"></div>
             </div>
           </div>
         </div>
@@ -138,8 +117,8 @@ export default {
 .greeting {
   font-size: 1.5rem;
   color: $primary;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .right-container {
   display: flex;
@@ -152,7 +131,6 @@ export default {
   margin-bottom: 0 !important;
 }
 .about-me-text {
-  margin-bottom: 32px;
   font-size: 1.2rem;
 }
 .interested-in {

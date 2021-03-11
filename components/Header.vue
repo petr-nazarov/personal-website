@@ -13,20 +13,37 @@
         <!-- <b-navbar-item v-scroll-to="'#services'" tag="router-link" to="#">
           Services
         </b-navbar-item> -->
+        <b-navbar-item v-scroll-to="'#skills'" tag="router-link" to="#">
+          Skills
+        </b-navbar-item>
         <b-navbar-item v-scroll-to="'#employment'" tag="router-link" to="#">
           Employment
         </b-navbar-item>
         <b-navbar-item v-scroll-to="'#education'" tag="router-link" to="#">
           Education
         </b-navbar-item>
-        <b-navbar-item v-scroll-to="'#skills'" tag="router-link" to="#">
-          Skills
-        </b-navbar-item>
+
         <b-navbar-item v-scroll-to="'#portfolio'" tag="router-link" to="#">
           Portfolio
         </b-navbar-item>
       </template>
       <template slot="end">
+        <!-- Socials -->
+
+        <b-navbar-item
+          tag="a"
+          v-for="(social, index) in socials"
+          :key="index"
+          :href="social.link"
+          class="column social-icons__element"
+          target="_blank"
+        >
+          <font-awesome-icon
+            :icon="['fab', social.icon]"
+            class="social-icons__icon fab"
+          />
+        </b-navbar-item>
+
         <b-navbar-item tag="a">
           <span class="contact contact_last">
             <font-awesome-icon :icon="['fa', 'envelope']" />
@@ -61,6 +78,10 @@ export default {
     contacts: {
       required: true,
       type: Object
+    },
+    socials: {
+      required: true,
+      type: Array
     }
   }
 }

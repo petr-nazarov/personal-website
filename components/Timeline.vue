@@ -37,7 +37,7 @@
               :key="taskIndex"
               class="line__tasks_element"
             >
-              - {{ task }}
+              <b>-</b> {{ task }}
             </li>
           </ul>
         </div>
@@ -72,7 +72,7 @@ export default {
   &__container {
     border-left: 2px solid #ccd1d9;
     margin-left: 16px;
-    padding-top: 32px;
+    // padding-top: 32px;
     padding-bottom: 16px;
   }
   &__element {
@@ -98,8 +98,8 @@ export default {
     border-radius: 50%;
   }
   &__title {
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    font-weight: 700;
     text-transform: uppercase;
     color: $secondary;
   }
@@ -135,8 +135,11 @@ export default {
     .line__date,
     .line__title,
     .line__tasks {
-      padding-left: 20px;
       transform: scale(1.05);
+      padding-left: 10px;
+    }
+    .line__tasks {
+      padding-left: 30px;
     }
     .line__dot {
       transform: scale(1.2);

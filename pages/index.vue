@@ -1,7 +1,7 @@
 <template>
   <div>
     <template>
-      <v-header :contacts="contacts" />
+      <v-header :socials="socials" :contacts="contacts" />
       <about-me :socials="socials" />
       <!-- <services /> -->
       <skills :skills="skills" />
