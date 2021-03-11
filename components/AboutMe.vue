@@ -52,9 +52,9 @@
 
                 <div class="tags">
                   <span
-                    class="tag is-medium interested-in__position"
                     v-for="(position, positionIndex) in positions"
                     :key="positionIndex"
+                    class="tag is-medium interested-in__position"
                   >
                     {{ position }}</span
                   >

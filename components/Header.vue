@@ -31,9 +31,9 @@
         <!-- Socials -->
 
         <b-navbar-item
-          tag="a"
           v-for="(social, index) in socials"
           :key="index"
+          tag="a"
           :href="social.link"
           class="column social-icons__element"
           target="_blank"
