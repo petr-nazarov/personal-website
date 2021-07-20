@@ -110,7 +110,19 @@ export default {
       ],
       employment: [
         {
-          date: '2020 - Now',
+          date: '2021 - Now',
+          title: 'Yoobic',
+          link: 'https://yoobic.com/',
+          subtitle: `Senior Full Stack web Developer and DevOps Engineer`,
+          tasks: [
+            'Developed Infrastructure As Code microservice architecture.',
+            'Developed ETL process using prefect.io',
+            'Deployed and maintained the ETL engine (prefect) server on k8s',
+            'Developed and maintained features in a monolith project with multiple developers.'
+          ]
+        },
+        {
+          date: '2020 - 2021',
           title: 'Cred',
           link: 'https://www.credinvest.co/',
           subtitle: `Full Stack web Developer and DevOps Engineer`,
@@ -168,10 +180,12 @@ export default {
           skills: [
             'Node.js',
             'Typescript',
+            'NestJS',
             'Apache Kafka',
             'Koa.js',
             'Express.js',
             'Python',
+            'Prefect',
             'Strapi.io',
             'Laravel',
             'PHP',
@@ -188,15 +202,20 @@ export default {
             'CI/DI',
             'Docker',
             'Kubernetes',
+            'Helm',
             'Terraform',
             'AWS EC2',
             'AWS RDS',
             'AWS EKS',
             'AWS ECR',
             'AWS SQS',
+            'GCP',
+            'GKE',
+            'GCR',
             'Versel',
             'Heroku',
             'Sentry',
+            'GitHub Actions',
             'GitLab CI/CD',
             'Bash'
           ]
@@ -220,6 +239,7 @@ export default {
         {
           title: 'Other',
           skills: [
+            'Vim',
             'JIRA Administration',
             'PWA',
             'REST API',
