@@ -45,8 +45,12 @@
                 keeping my eyes open for the latest best practices and new
                 technologies in Automating tasks, Cloud Computing, and
                 Development Frameworks.<br />
-                I am looking for interesting opportunities to combine my
-                Software Architecture and DevOps Engineering skills.
+                I thrive when given an opportunity to combine my knowledge to
+                architect every layer of the application: from Code and Testing
+                to Deploying and Cloud Architecture, to Monitoring and
+                Resolution strategies. Given my vast experience in Development
+                and Management, I am looking for interesting opportunities to
+                combine my Architecture, DevOps and Team Leading skills.
               </p>
               <!-- Interested in -->
               <div class="interested-in">

@@ -115,6 +115,7 @@ export default {
           link: 'https://yoobic.com/',
           subtitle: `Senior Full Stack web Developer and DevOps Engineer`,
           tasks: [
+            'Integrated Monorepo and Microservices solutions in order to migrate the existing Monolith application. Wrote code and architectured CI/CD and cloud architecture for it.',
             'Developed Infrastructure As Code microservice architecture.',
             'Developed ETL process using prefect.io',
             'Deployed and maintained the ETL engine (prefect) server on k8s',
@@ -217,7 +218,8 @@ export default {
             'Sentry',
             'GitHub Actions',
             'GitLab CI/CD',
-            'Bash'
+            'Bash',
+            'OSI and TCP/IP'
           ]
         },
         {
