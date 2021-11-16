@@ -92,7 +92,9 @@ export default {
         'Software Architect',
         'DevOps Engineer',
         'Full Stack Developer',
-        'Software Developer'
+        'Software Developer',
+        'Tech Lead',
+        'Team Lead'
       ]
     }
   }
